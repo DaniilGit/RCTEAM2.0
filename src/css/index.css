@@ -1,138 +1,27 @@
-h1, h2, h3, h4, h5, h6, ul, body, html {
-  padding: 0;
-  margin: 0;
-}
-
-ul {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-  color: #4a4a4a;
-}
-
-button {
-  border: none;
-}
-
-body {
-  width: 100%;
-  font-family: "Open Sans", sans-serif;
-  color: #4a4a4a;
-  font-size: 14px;
-  box-sizing: border-box;
-}
-
-.content {
-  width: 100%;
-  max-width: 1300px;
-  height: 1000px;
-  margin: 0 auto;
-}
-
-.content-center {
-  max-width: 1200px;
-  height: 1000px;
-  margin: 0 auto;
-}
-
-.header {
+.section-information-about-us {
+  margin-top: 200px;
   display: flex;
   justify-content: space-between;
-  color: #60606E;
-  font-family: "Montserrat", sans-serif;
 }
 
-.header .head {
-  margin-top: 20px;
+.section-information-about-us .left-img {
+  width: 500px;
 }
 
-.header .head__title {
-  font-size: 26px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.header .head__phone {
-  margin-top: 10px;
-  font-size: 20px;
-  font-weight: bold;
-  color: #0B6F4B;
-}
-
-.header .navigation {
-  margin-top: 20px;
-}
-
-.header .navigation .menu {
-  display: flex;
-  height: 30px;
-  align-items: center;
-}
-
-.header .navigation .menu__item {
-  padding-left: 15px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.header .navigation .menu__item a:hover {
-  color: #0B6F4B;
-}
-
-.main-title {
-  margin: 100px 0;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.main-title .top-min-title {
-  width: 120px;
-  margin: 0 auto;
-  background-color: #0B6F4B;
-  color: #ffffff;
-  font-size: 18px;
-}
-
-.main-title .title {
-  width: 100%;
-  margin: 0 auto;
-  max-width: 600px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 40px;
-  font-weight: bold;
-  border: 10px solid #60606E;
-}
-
-.main-title .subtitle {
-  margin-top: 10px;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.information-about-us {
-  display: flex;
-}
-
-.information-about-us .img {
+.section-information-about-us .information {
   width: 50%;
 }
 
-.information-about-us .information {
-  width: 50%;
-  font-family: "Montserrat", sans-serif;
-}
-
-.information-about-us .information__header {
+.section-information-about-us .information__header {
   position: relative;
   left: 30px;
   font-size: 30px;
   text-transform: uppercase;
   font-weight: bold;
+  font-family: "Montserrat", sans-serif;
 }
 
-.information-about-us .information__header::before {
+.section-information-about-us .information__header::before {
   content: "";
   width: 25px;
   height: 25px;
@@ -142,25 +31,25 @@ body {
   top: 3px;
 }
 
-.information-about-us .information__info {
+.section-information-about-us .information__info {
   margin-top: 10px;
   text-align: justify;
   font-size: 16px;
   line-height: 25px;
 }
 
-.information-about-us .information .button {
+.section-information-about-us .information .block-button {
   display: flex;
   justify-content: flex-end;
 }
 
-.information-about-us .information .button__next {
+.section-information-about-us .information .block-button__button-next {
   width: 150px;
   height: 50px;
   background-color: #0B6F4B;
 }
 
-.information-about-us .information .button__next a {
+.section-information-about-us .information .block-button__button-next a {
   display: inline-block;
   width: 100%;
   height: 100%;
@@ -170,7 +59,135 @@ body {
   line-height: 48px;
 }
 
-.information-about-us .information .button__next:hover {
-  box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+.section-advantages {
+  margin-top: 200px;
+}
+
+.section-advantages__header {
+  position: relative;
+  left: 30px;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  width: 450px;
+  margin: 0 auto;
+}
+
+.section-advantages__header::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-color: #0B6F4B;
+  position: absolute;
+  left: -30px;
+  top: 3px;
+}
+
+.section-advantages .content-advantages {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.section-advantages .content-advantages .block-lists {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 60%;
+  text-transform: uppercase;
+}
+
+.section-advantages .content-advantages .block-lists .advantages-list {
+  width: 50%;
+  margin-bottom: 50px;
+}
+
+.section-advantages .content-advantages .block-lists .advantages-list__header {
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+
+.section-advantages .content-advantages .block-lists .advantages-list__min-logo {
+  width: 28px;
+  height: 28px;
+}
+
+.section-advantages .content-advantages .block-lists .advantages-list__min-logo_number_1 {
+  margin-bottom: 8px;
+  height: 20px;
+  width: 32px;
+}
+
+.section-advantages .content-advantages .block-lists .advantages-list__item {
+  padding: 5px 0;
+}
+
+.section-advantages .content-advantages .right-img {
+  margin-top: 20px;
+  height: 412px;
+}
+
+.section-portfolio {
+  margin-top: 200px;
+}
+
+.section-portfolio__header {
+  position: relative;
+  left: 30px;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  width: 350px;
+  margin: 0 auto;
+}
+
+.section-portfolio__header::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-color: #0B6F4B;
+  position: absolute;
+  left: -30px;
+  top: 3px;
+}
+
+.section-portfolio .content-portfolio {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.section-portfolio .block-category {
+  font-family: "Montserrat", sans-serif;
+}
+
+.section-portfolio .block-category__header {
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.section-portfolio .block-category .category-list {
+  margin-top: 25px;
+}
+
+.section-portfolio .block-category .category-list__button {
+  width: 250px;
+  text-align: left;
+  padding: 10px;
+  font-size: 18px;
+  background-color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #60606E;
+}
+
+.section-portfolio .block-category .category-list__button:hover {
+  background-color: #0B6F4B;
+  color: #ffffff;
 }
 /*# sourceMappingURL=index.css.map */

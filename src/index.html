@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Главная страница</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">  <!-- Слайдер -->
+    <link rel="stylesheet" href="css/general-styles.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
@@ -30,31 +32,147 @@
             </header>
             <!-- /Header -->
             
-            <!-- Main Title -->
-            <section class="main-title">
+            <!-- Section Main Title -->
+            <section class="section-main-title">
                 <div class="top-min-title">R&C TEAM</div>
                 <div class="title">Ремонт в Новосибирске</div>
                 <div class="subtitle">ВЫЕЗД НА ЗАМЕР И КОНСУЛЬТАЦИЯ БЕСПЛАТНО</div>
                 <div class="subtitle">Любые виды работ</div>
             </section>
-            <!-- /Main Title -->
+            <!-- /Section Main Title -->
 
-            <!-- Information about us -->
-            <section class="information-about-us">
-                <div class="img"><img src="img/information-about-us_logo.png" alt="Картинка дизайн-интерьера"></div>
+            <!-- Section Information about us -->
+            <section class="section-information-about-us">
+                <img src="img/index/information-about-us_img.png" alt="Картинка дизайн-интерьера" class="left-img">
                 <div class="information">
                     <div class="information__header">Информация о компании</div>
                     <div class="information__info">Наша компания выполняет все виды ремонта квартир в Новосибирске любой сложности и объема по умеренной стоимости.
                         Занимаемся ремонтом квартир/помещений, комплексным, косметическим ремонтом, ремонтом по дизайн проектам, изготовлением мебели под заказ. 
                         Все виды работ, любые помещения, а так же уличные работы. Больше информации о нас, Вы, можете узнать далее...</div>
-                    <div class="button">
-                        <button class="button__next"><a href="#">Далее</a></button>
+                    <div class="block-button">
+                        <button class="block-button__button-next"><a href="#">Далее</a></button>
                     </div>
                 </div>
             </section>
-            <!-- /Information about us -->
+            <!-- /Section Information about us -->
 
+            <!-- Section Advantages -->
+            <section class="section-advantages">
+                <div class="section-advantages__header">Почему выбирают нас?</div>
+                <div class="content-advantages">
+                    <div class="block-lists">
+                        <ul class="advantages-list advantages-list_number_1">
+                            <img src="img/index/min_logo1.png" alt="Знак бесконечности" class="advantages-list__min-logo advantages-list__min-logo_number_1">
+                            <div class="advantages-list__header">Любые помещения</div>
+                            <li class="advantages-list__item">Квартира</li>
+                            <li class="advantages-list__item">Коттедж</li>
+                            <li class="advantages-list__item">Гараж</li>
+                            <li class="advantages-list__item">Офис</li>
+                        </ul>
+                        <ul class="advantages-list advantages-list_number_2">
+                            <img src="img/index/min_logo2.png" alt="Тележка" class="advantages-list__min-logo">
+                            <div class="advantages-list__header">Мебель под заказ</div>
+                            <li class="advantages-list__item">Кухни</li>
+                            <li class="advantages-list__item">Шкафы-купе</li>
+                            <li class="advantages-list__item">Тумбы</li>
+                            <li class="advantages-list__item">Столешницы</li>
+                        </ul>
+                        <ul class="advantages-list advantages-list_number_3">
+                            <img src="img/index/min_logo3.png" alt="Стрелочки" class="advantages-list__min-logo">
+                            <div class="advantages-list__header">Дизайн-проект & Ремонт</div>
+                            <li class="advantages-list__item">Комплексный ремонт</li>
+                            <li class="advantages-list__item">Косметический ремонт</li>
+                            <li class="advantages-list__item">Ремонт по дизайн-проекту</li>
+                            <li class="advantages-list__item">Ремонт в новостройках под ключ</li>
+                        </ul>
+                        <ul class="advantages-list advantages-list_number_4">
+                            <img src="img/index/min_logo4.png" alt="Линии" class="advantages-list__min-logo">
+                            <div class="advantages-list__header">Все виды работ</div>
+                            <li class="advantages-list__item">Электромотнажные</li>
+                            <li class="advantages-list__item">Сантехнические</li>
+                            <li class="advantages-list__item">Малярные</li>
+                            <li class="advantages-list__item">Демонтажные и другие...</li>
+                        </ul>
+                    </div>
+                    <img src="img/index/advantages_right-img.png" alt="Логотип компании" class="right-img">
+                </div>
+            </section>
+            <!-- /Section Advantages -->
+
+            <!-- Section Portfolio -->
+            <section class="section-portfolio">
+                <div class="section-portfolio__header">Наше портфолио</div>
+                <div class="content-portfolio">
+                    <div class="block-category">
+                        <div class="block-category__header">Выберите Категорию</div>
+                        <ul class="category-list">
+                            <li><button class="category-list__button">Жилые комнаты</button></li>
+                            <li><button class="category-list__button">Ванные комнаты</button></li>
+                            <li><button class="category-list__button">Кухни</button></li>
+                            <li><button class="category-list__button">Уличные работы</button></li>
+                            <li><button class="category-list__button">Мебель под заказ</button></li>
+                        </ul>
+                    </div>
+                    <div class="block-slider">
+                        <div class="fotorama" data-autoplay="3000">
+                            <img src="./img/photo/room/1.jpg">
+                            <img src="./img/photo/room/2.jpg">
+                            <img src="./img/photo/room/3.jpg">
+                            <img src="./img/photo/room/4.jpg">
+                            <img src="./img/photo/room/5.jpg">
+                            <img src="./img/photo/room/6.jpg">
+                            <img src="./img/photo/room/7.jpg">
+                            <img src="./img/photo/room/8.jpg">
+                            <img src="./img/photo/room/9.jpg">
+                            <img src="./img/photo/room/10.jpg">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /Section Portfolio -->
+            
+            <!-- Section Feedback Form -->
+            <section class="section-feedback-form">
+                <div class="block-left-content">
+                    <div class="block-left-content__header">Хочешь заказать ремонт или мебель? <br>Звони или заполняй форму заявки. Мы тебя ждем!</div>
+                    <button class="block-left-content__button-form">Заполнить заявку</button>
+                </div>
+                <div class="window">
+                    <div class="window__header">Хотите задать вопрос по ремонту?</div>
+                    <div class="window__paragraph">Заполните форму, и мы свяжемся с вами в ближайшее время.</div>
+                    <form action="" class="form">
+                        <div class="block-left-input">
+                            <input type="text" class="form__input form__input_type_text" placeholder="Ваше имя*" name="name" required>
+                            <input type="tel" class="form__input form__input_type_tel" placeholder="Ваш телефон*" name="tel" required>
+                        </div>
+                        <input type="submit" class="form__input form__input_type_submit" name="submit">
+                    </form>
+                </div>
+            </section>
+            <!-- /Section Feedback Form -->
+
+            <!-- Footer -->
+            <footer class="footer">
+                <nav class="navigation">
+                    <ul class="menu">
+                        <li class="menu__item"><a href="#">Главная</a></li>
+                        <li class="menu__item"><a href="#">О компании</a></li>
+                        <li class="menu__item"><a href="#">Портфолио</a></li>
+                        <li class="menu__item"><a href="#">Услуги и цены</a></li>
+                        <li class="menu__item"><a href="#">Контакты</a></li>
+                        <li class="menu__item"><a href="#">Заявка на ремонт</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__copyright">Создано R&C Team 2019. Все права защищены.</div>
+                <ul class="social">
+                    <li><a href="https://vk.com/rcteam54" class="social__item" target="_blank"><img src="./img/vk.png"></a></li>
+                    <li><a href="https://www.instagram.com/rcteam54/" class="social__item" target="_blank"><img src="./img/inst.png"></a></a></li>
+                </ul>
+            </footer>
+            <!-- /Footer -->
         </div>
     </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- Слайдер -->
 </body>
 </html>
