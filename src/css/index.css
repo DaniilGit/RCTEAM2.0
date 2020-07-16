@@ -5,7 +5,8 @@
 }
 
 .section-information-about-us .left-img {
-  width: 500px;
+  width: 40%;
+  height: 40%;
 }
 
 .section-information-about-us .information {
@@ -59,6 +60,114 @@
   line-height: 48px;
 }
 
+@media (max-width: 575px) {
+  .section-information-about-us {
+    padding: 10px;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .section-information-about-us .information {
+    width: 90%;
+  }
+  .section-information-about-us .information__header {
+    width: 90%;
+    position: relative;
+    left: 26px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+  }
+  .section-information-about-us .information__header::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background-color: #0B6F4B;
+    position: absolute;
+    left: -26px;
+    top: 1px;
+  }
+  .section-information-about-us .information .block-button {
+    margin-top: 10px;
+  }
+  .section-information-about-us .left-img {
+    margin-top: 50px;
+    width: 90%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .section-information-about-us {
+    padding: 10px;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .section-information-about-us .information {
+    width: 90%;
+  }
+  .section-information-about-us .information__header {
+    position: relative;
+    left: 28px;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+  }
+  .section-information-about-us .information__header::before {
+    content: "";
+    width: 22px;
+    height: 22px;
+    background-color: #0B6F4B;
+    position: absolute;
+    left: -28px;
+    top: 3px;
+  }
+  .section-information-about-us .information .block-button {
+    margin-top: 10px;
+  }
+  .section-information-about-us .left-img {
+    margin-top: 50px;
+    width: 70%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .section-information-about-us {
+    padding: 10px;
+    justify-content: space-around;
+  }
+  .section-information-about-us .information__header {
+    position: relative;
+    left: 28px;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+  }
+  .section-information-about-us .information__header::before {
+    content: "";
+    width: 22px;
+    height: 22px;
+    background-color: #0B6F4B;
+    position: absolute;
+    left: -28px;
+    top: 3px;
+  }
+  .section-information-about-us .information .block-button {
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1299px) {
+  .section-information-about-us {
+    padding: 10px;
+    justify-content: space-around;
+  }
+  .section-information-about-us .information .block-button {
+    margin-top: 10px;
+  }
+}
+
 .section-advantages {
   margin-top: 200px;
 }
@@ -70,7 +179,7 @@
   text-transform: uppercase;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
-  width: 450px;
+  width: 38%;
   margin: 0 auto;
 }
 
@@ -127,7 +236,91 @@
 
 .section-advantages .content-advantages .right-img {
   margin-top: 20px;
-  height: 412px;
+  width: 40%;
+  height: 40%;
+}
+
+@media (max-width: 575px) {
+  .section-advantages {
+    padding: 10px;
+  }
+  .section-advantages__header {
+    position: relative;
+    left: 26px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    width: 85%;
+  }
+  .section-advantages__header::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background-color: #0B6F4B;
+    position: absolute;
+    left: -26px;
+    top: 1px;
+  }
+  .section-advantages .content-advantages {
+    flex-direction: column;
+  }
+  .section-advantages .content-advantages .block-lists {
+    width: 100%;
+    text-align: center;
+  }
+  .section-advantages .content-advantages .block-lists .advantages-list {
+    margin-bottom: 100px;
+    width: 100%;
+  }
+  .section-advantages .content-advantages .right-img {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+  .section-advantages {
+    padding: 10px;
+  }
+  .section-advantages__header {
+    position: relative;
+    left: 28px;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    width: 350px;
+  }
+  .section-advantages__header::before {
+    content: "";
+    width: 22px;
+    height: 22px;
+    background-color: #0B6F4B;
+    position: absolute;
+    left: -28px;
+    top: 3px;
+  }
+  .section-advantages .content-advantages {
+    flex-direction: column;
+  }
+  .section-advantages .content-advantages .block-lists {
+    width: 100%;
+    text-align: center;
+  }
+  .section-advantages .content-advantages .right-img {
+    width: 70%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1299px) {
+  .section-advantages {
+    padding: 10px;
+  }
+  .section-advantages__header {
+    width: 450px;
+  }
 }
 
 .section-portfolio {
@@ -176,7 +369,7 @@
 }
 
 .section-portfolio .block-category .category-list__button {
-  width: 250px;
+  width: 100%;
   text-align: left;
   padding: 10px;
   font-size: 18px;
@@ -189,5 +382,85 @@
 .section-portfolio .block-category .category-list__button:hover {
   background-color: #0B6F4B;
   color: #ffffff;
+}
+
+@media (max-width: 575px) {
+  .section-portfolio {
+    padding: 10px;
+  }
+  .section-portfolio__header {
+    position: relative;
+    left: 26px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    width: 85%;
+  }
+  .section-portfolio__header::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background-color: #0B6F4B;
+    position: absolute;
+    left: -26px;
+    top: 1px;
+  }
+  .section-portfolio .content-portfolio {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-portfolio .block-category__header {
+    display: none;
+  }
+  .section-portfolio .block-category .category-list {
+    margin-top: 10px;
+  }
+  .section-portfolio .block-category .category-list__button {
+    text-align: center;
+  }
+  .section-portfolio .block-slider {
+    margin-top: 50px;
+  }
+  .section-portfolio .block-slider .fotorama {
+    width: 300px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .section-portfolio {
+    padding: 10px;
+  }
+  .section-portfolio__header {
+    width: 330px;
+  }
+  .section-portfolio .content-portfolio {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-portfolio .block-category__header {
+    display: none;
+  }
+  .section-portfolio .block-category .category-list {
+    margin-top: 10px;
+  }
+  .section-portfolio .block-category .category-list__button {
+    text-align: center;
+  }
+  .section-portfolio .block-slider {
+    margin-top: 50px;
+  }
+  .section-portfolio .block-slider .fotorama {
+    width: 480px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1299px) {
+  .section-portfolio {
+    padding: 10px;
+  }
+  .section-portfolio .fotorama {
+    width: 480px;
+  }
 }
 /*# sourceMappingURL=index.css.map */
