@@ -233,6 +233,18 @@ body {
   font-weight: bold;
 }
 
+.section-main-title .subtitle-pages {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 25px;
+  padding: 5px;
+  color: #ffffff;
+  font-size: 24px;
+  text-transform: uppercase;
+  background-color: #0B6F4B;
+}
+
 @media (max-width: 575px) {
   .section-main-title {
     padding: 10px;
@@ -242,6 +254,10 @@ body {
   }
   .section-main-title .subtitle {
     font-size: 16px;
+  }
+  .section-main-title .subtitle-pages {
+    width: 80%;
+    font-size: 22px;
   }
 }
 
@@ -454,22 +470,17 @@ body {
   }
 }
 
-.section-information-about-us {
+.section-contacts {
   margin-top: 200px;
   display: flex;
   justify-content: space-between;
 }
 
-.section-information-about-us .left-img {
-  width: 40%;
-  height: 40%;
+.section-contacts .block-contacts {
+  flex-basis: 50%;
 }
 
-.section-information-about-us .information {
-  width: 50%;
-}
-
-.section-information-about-us .information__header {
+.section-contacts .block-contacts__header {
   position: relative;
   left: 30px;
   font-size: 30px;
@@ -478,7 +489,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.section-information-about-us .information__header::before {
+.section-contacts .block-contacts__header::before {
   content: "";
   width: 25px;
   height: 25px;
@@ -488,224 +499,69 @@ body {
   top: 3px;
 }
 
-.section-information-about-us .information__info {
-  margin-top: 10px;
-  text-align: justify;
-  font-size: 16px;
-  line-height: 25px;
+.section-contacts .block-contacts .table {
+  margin-top: 50px;
+  border-collapse: collapse;
 }
 
-.section-information-about-us .information__button-next {
-  float: right;
-  width: 150px;
-  height: 50px;
-  background-color: #0B6F4B;
+.section-contacts .block-contacts .table__cell {
+  width: 400px;
+  height: 30px;
+  border: 1px solid #60606E;
 }
 
-.section-information-about-us .information__link-next {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #ffffff;
-  line-height: 48px;
+.section-contacts .block-contacts .table__row:hover, .section-contacts .block-contacts .table__row:nth-of-type(2n):hover {
+  background: #0B6F4B;
+  color: white;
 }
 
-@media (max-width: 575px) {
-  .section-information-about-us {
-    padding: 10px;
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-  .section-information-about-us .information {
-    width: 90%;
-  }
-  .section-information-about-us .information__header {
-    width: 90%;
-    position: relative;
-    left: 26px;
-    font-size: 20px;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-family: "Montserrat", sans-serif;
-  }
-  .section-information-about-us .information__header::before {
-    content: "";
-    width: 18px;
-    height: 18px;
-    background-color: #0B6F4B;
-    position: absolute;
-    left: -26px;
-    top: 1px;
-  }
-  .section-information-about-us .information .block-button {
-    margin-top: 10px;
-  }
-  .section-information-about-us .left-img {
-    margin-top: 50px;
-    width: 90%;
-  }
+.section-contacts .block-contacts .table__row:nth-of-type(2n) {
+  background: lightgray;
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
-  .section-information-about-us {
-    padding: 10px;
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-  .section-information-about-us .information {
-    width: 90%;
-  }
-  .section-information-about-us .information__header {
-    position: relative;
-    left: 28px;
-    font-size: 24px;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-family: "Montserrat", sans-serif;
-  }
-  .section-information-about-us .information__header::before {
-    content: "";
-    width: 22px;
-    height: 22px;
-    background-color: #0B6F4B;
-    position: absolute;
-    left: -28px;
-    top: 3px;
-  }
-  .section-information-about-us .information .block-button {
-    margin-top: 10px;
-  }
-  .section-information-about-us .left-img {
-    margin-top: 50px;
-    width: 70%;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .section-information-about-us {
-    padding: 10px;
-    justify-content: space-around;
-  }
-  .section-information-about-us .information__header {
-    position: relative;
-    left: 28px;
-    font-size: 24px;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-family: "Montserrat", sans-serif;
-  }
-  .section-information-about-us .information__header::before {
-    content: "";
-    width: 22px;
-    height: 22px;
-    background-color: #0B6F4B;
-    position: absolute;
-    left: -28px;
-    top: 3px;
-  }
-  .section-information-about-us .information .block-button {
-    margin-top: 10px;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1299px) {
-  .section-information-about-us {
-    padding: 10px;
-    justify-content: space-around;
-  }
-  .section-information-about-us .information .block-button {
-    margin-top: 10px;
-  }
-}
-
-.section-advantages {
-  margin-top: 200px;
-}
-
-.section-advantages__header {
-  position: relative;
-  left: 30px;
-  font-size: 30px;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-family: "Montserrat", sans-serif;
-  width: 38%;
-  margin: 0 auto;
-}
-
-.section-advantages__header::before {
-  content: "";
-  width: 25px;
-  height: 25px;
-  background-color: #0B6F4B;
-  position: absolute;
-  left: -30px;
-  top: 3px;
-}
-
-.section-advantages .content-advantages {
-  display: flex;
-  justify-content: space-between;
+.section-contacts .content {
+  height: 200px;
   margin-top: 50px;
 }
 
-.section-advantages .content-advantages .block-lists {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 60%;
-  text-transform: uppercase;
+.section-contacts .content__item {
+  display: inline-block;
+  margin-bottom: 25px;
+  width: 75%;
 }
 
-.section-advantages .content-advantages .block-lists .advantages-list {
-  width: 50%;
-  margin-bottom: 50px;
+.section-contacts .content__link img {
+  width: 35px;
 }
 
-.section-advantages .content-advantages .block-lists .advantages-list__header {
-  padding: 15px 0;
-  font-size: 18px;
-  font-weight: bold;
-  font-family: "Montserrat", sans-serif;
+.section-contacts .content__left {
+  float: left;
 }
 
-.section-advantages .content-advantages .block-lists .advantages-list__min-logo {
-  width: 28px;
-  height: 28px;
-}
-
-.section-advantages .content-advantages .block-lists .advantages-list__min-logo_number_1 {
-  margin-bottom: 8px;
-  height: 20px;
-  width: 32px;
-}
-
-.section-advantages .content-advantages .block-lists .advantages-list__item {
-  padding: 5px 0;
-}
-
-.section-advantages .content-advantages .right-img {
-  margin-top: 20px;
-  width: 40%;
-  height: 40%;
+.section-contacts .content__right {
+  float: right;
 }
 
 @media (max-width: 575px) {
-  .section-advantages {
-    padding: 10px;
+  .section-contacts {
+    flex-direction: column;
+    align-items: center;
   }
-  .section-advantages__header {
+  .section-contacts .block-contacts {
+    width: 80%;
+  }
+  .section-contacts .block-contacts .content__item {
+    width: 100%;
+  }
+  .section-contacts .block-contacts__header {
     position: relative;
     left: 26px;
     font-size: 20px;
     text-transform: uppercase;
     font-weight: bold;
     font-family: "Montserrat", sans-serif;
-    width: 85%;
   }
-  .section-advantages__header::before {
+  .section-contacts .block-contacts__header::before {
     content: "";
     width: 18px;
     height: 18px;
@@ -714,142 +570,40 @@ body {
     left: -26px;
     top: 1px;
   }
-  .section-advantages .content-advantages {
-    flex-direction: column;
-  }
-  .section-advantages .content-advantages .block-lists {
-    width: 100%;
-    text-align: center;
-  }
-  .section-advantages .content-advantages .block-lists .advantages-list {
-    margin-bottom: 100px;
-    width: 100%;
-  }
-  .section-advantages .content-advantages .right-img {
-    width: 90%;
-    margin: auto;
+  .section-contacts .requisites {
+    margin-top: 50px;
   }
 }
 
 @media (min-width: 576px) and (max-width: 991px) {
-  .section-advantages {
-    padding: 10px;
-  }
-  .section-advantages__header {
-    position: relative;
-    left: 28px;
-    font-size: 24px;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-family: "Montserrat", sans-serif;
-    width: 350px;
-  }
-  .section-advantages__header::before {
-    content: "";
-    width: 22px;
-    height: 22px;
-    background-color: #0B6F4B;
-    position: absolute;
-    left: -28px;
-    top: 3px;
-  }
-  .section-advantages .content-advantages {
+  .section-contacts {
     flex-direction: column;
+    align-items: center;
   }
-  .section-advantages .content-advantages .block-lists {
+  .section-contacts .block-contacts {
+    width: 80%;
+  }
+  .section-contacts .block-contacts .content__item {
     width: 100%;
-    text-align: center;
   }
-  .section-advantages .content-advantages .right-img {
-    width: 70%;
-    margin: auto;
+  .section-contacts .requisites {
+    margin-top: 50px;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1299px) {
-  .section-advantages {
-    padding: 10px;
+  .section-contacts .block-contacts {
+    margin: 25px;
   }
-  .section-advantages__header {
-    width: 450px;
-  }
-}
-
-.section-portfolio {
-  margin-top: 200px;
-}
-
-.section-portfolio__header {
-  position: relative;
-  left: 30px;
-  font-size: 30px;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-family: "Montserrat", sans-serif;
-  width: 350px;
-  margin: 0 auto;
-}
-
-.section-portfolio__header::before {
-  content: "";
-  width: 25px;
-  height: 25px;
-  background-color: #0B6F4B;
-  position: absolute;
-  left: -30px;
-  top: 3px;
-}
-
-.section-portfolio .content-portfolio {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 50px;
-}
-
-.section-portfolio .block-category {
-  font-family: "Montserrat", sans-serif;
-}
-
-.section-portfolio .block-category__header {
-  font-size: 25px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.section-portfolio .block-category .category-list {
-  margin-top: 25px;
-}
-
-.section-portfolio .block-category .category-list__button {
-  width: 100%;
-  text-align: left;
-  padding: 10px;
-  font-size: 18px;
-  background-color: #ffffff;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #60606E;
-}
-
-.section-portfolio .block-category .category-list__button:hover {
-  background-color: #0B6F4B;
-  color: #ffffff;
-}
-
-@media (max-width: 575px) {
-  .section-portfolio {
-    padding: 10px;
-  }
-  .section-portfolio__header {
+  .section-contacts .block-contacts__header {
     position: relative;
     left: 26px;
     font-size: 20px;
     text-transform: uppercase;
     font-weight: bold;
     font-family: "Montserrat", sans-serif;
-    width: 85%;
   }
-  .section-portfolio__header::before {
+  .section-contacts .block-contacts__header::before {
     content: "";
     width: 18px;
     height: 18px;
@@ -858,61 +612,5 @@ body {
     left: -26px;
     top: 1px;
   }
-  .section-portfolio .content-portfolio {
-    flex-direction: column;
-    align-items: center;
-  }
-  .section-portfolio .block-category__header {
-    display: none;
-  }
-  .section-portfolio .block-category .category-list {
-    margin-top: 10px;
-  }
-  .section-portfolio .block-category .category-list__button {
-    text-align: center;
-  }
-  .section-portfolio .block-slider {
-    margin-top: 50px;
-  }
-  .section-portfolio .block-slider .fotorama {
-    width: 300px;
-  }
 }
-
-@media (min-width: 576px) and (max-width: 767px) {
-  .section-portfolio {
-    padding: 10px;
-  }
-  .section-portfolio__header {
-    width: 330px;
-  }
-  .section-portfolio .content-portfolio {
-    flex-direction: column;
-    align-items: center;
-  }
-  .section-portfolio .block-category__header {
-    display: none;
-  }
-  .section-portfolio .block-category .category-list {
-    margin-top: 10px;
-  }
-  .section-portfolio .block-category .category-list__button {
-    text-align: center;
-  }
-  .section-portfolio .block-slider {
-    margin-top: 50px;
-  }
-  .section-portfolio .block-slider .fotorama {
-    width: 480px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1299px) {
-  .section-portfolio {
-    padding: 10px;
-  }
-  .section-portfolio .fotorama {
-    width: 480px;
-  }
-}
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=contact.css.map */

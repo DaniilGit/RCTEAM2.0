@@ -233,6 +233,18 @@ body {
   font-weight: bold;
 }
 
+.section-main-title .subtitle-pages {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 25px;
+  padding: 5px;
+  color: #ffffff;
+  font-size: 24px;
+  text-transform: uppercase;
+  background-color: #0B6F4B;
+}
+
 @media (max-width: 575px) {
   .section-main-title {
     padding: 10px;
@@ -242,6 +254,10 @@ body {
   }
   .section-main-title .subtitle {
     font-size: 16px;
+  }
+  .section-main-title .subtitle-pages {
+    width: 80%;
+    font-size: 22px;
   }
 }
 
@@ -454,22 +470,17 @@ body {
   }
 }
 
-.section-information-about-us {
+.section-main-information {
   margin-top: 200px;
   display: flex;
   justify-content: space-between;
 }
 
-.section-information-about-us .left-img {
-  width: 40%;
-  height: 40%;
+.section-main-information .block-main-information {
+  flex-basis: 45%;
 }
 
-.section-information-about-us .information {
-  width: 50%;
-}
-
-.section-information-about-us .information__header {
+.section-main-information .block-main-information__header {
   position: relative;
   left: 30px;
   font-size: 30px;
@@ -478,7 +489,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.section-information-about-us .information__header::before {
+.section-main-information .block-main-information__header::before {
   content: "";
   width: 25px;
   height: 25px;
@@ -488,41 +499,22 @@ body {
   top: 3px;
 }
 
-.section-information-about-us .information__info {
+.section-main-information .block-main-information__paragraph {
   margin-top: 10px;
+  line-height: 30px;
   text-align: justify;
-  font-size: 16px;
-  line-height: 25px;
-}
-
-.section-information-about-us .information__button-next {
-  float: right;
-  width: 150px;
-  height: 50px;
-  background-color: #0B6F4B;
-}
-
-.section-information-about-us .information__link-next {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #ffffff;
-  line-height: 48px;
 }
 
 @media (max-width: 575px) {
-  .section-information-about-us {
-    padding: 10px;
-    flex-direction: column-reverse;
-    align-items: center;
+  .section-main-information {
+    flex-direction: column;
   }
-  .section-information-about-us .information {
+  .section-main-information .block-main-information {
     width: 90%;
+    margin: 0 auto;
   }
-  .section-information-about-us .information__header {
-    width: 90%;
+  .section-main-information .block-main-information__header {
+    width: 240px;
     position: relative;
     left: 26px;
     font-size: 20px;
@@ -530,7 +522,7 @@ body {
     font-weight: bold;
     font-family: "Montserrat", sans-serif;
   }
-  .section-information-about-us .information__header::before {
+  .section-main-information .block-main-information__header::before {
     content: "";
     width: 18px;
     height: 18px;
@@ -539,25 +531,20 @@ body {
     left: -26px;
     top: 1px;
   }
-  .section-information-about-us .information .block-button {
-    margin-top: 10px;
-  }
-  .section-information-about-us .left-img {
-    margin-top: 50px;
-    width: 90%;
+  .section-main-information .activity {
+    margin-top: 100px;
   }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
-  .section-information-about-us {
-    padding: 10px;
-    flex-direction: column-reverse;
-    align-items: center;
+  .section-main-information {
+    flex-direction: column;
   }
-  .section-information-about-us .information {
+  .section-main-information .block-main-information {
     width: 90%;
+    margin: 0 auto;
   }
-  .section-information-about-us .information__header {
+  .section-main-information .block-main-information__header {
     position: relative;
     left: 28px;
     font-size: 24px;
@@ -565,7 +552,7 @@ body {
     font-weight: bold;
     font-family: "Montserrat", sans-serif;
   }
-  .section-information-about-us .information__header::before {
+  .section-main-information .block-main-information__header::before {
     content: "";
     width: 22px;
     height: 22px;
@@ -574,49 +561,28 @@ body {
     left: -28px;
     top: 3px;
   }
-  .section-information-about-us .information .block-button {
-    margin-top: 10px;
-  }
-  .section-information-about-us .left-img {
-    margin-top: 50px;
-    width: 70%;
+  .section-main-information .activity {
+    margin-top: 100px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .section-information-about-us {
-    padding: 10px;
-    justify-content: space-around;
+  .section-main-information {
+    flex-direction: column;
   }
-  .section-information-about-us .information__header {
-    position: relative;
-    left: 28px;
-    font-size: 24px;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-family: "Montserrat", sans-serif;
+  .section-main-information .block-main-information {
+    width: 90%;
+    margin: 0 auto;
   }
-  .section-information-about-us .information__header::before {
-    content: "";
-    width: 22px;
-    height: 22px;
-    background-color: #0B6F4B;
-    position: absolute;
-    left: -28px;
-    top: 3px;
-  }
-  .section-information-about-us .information .block-button {
-    margin-top: 10px;
+  .section-main-information .activity {
+    margin-top: 100px;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1299px) {
-  .section-information-about-us {
+  .section-main-information {
     padding: 10px;
     justify-content: space-around;
-  }
-  .section-information-about-us .information .block-button {
-    margin-top: 10px;
   }
 }
 
@@ -631,7 +597,7 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
-  width: 38%;
+  width: 33%;
   margin: 0 auto;
 }
 
@@ -646,64 +612,93 @@ body {
 }
 
 .section-advantages .content-advantages {
+  margin-top: 100px;
   display: flex;
-  justify-content: space-between;
-  margin-top: 50px;
-}
-
-.section-advantages .content-advantages .block-lists {
-  display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  width: 60%;
-  text-transform: uppercase;
+  justify-content: space-around;
 }
 
-.section-advantages .content-advantages .block-lists .advantages-list {
-  width: 50%;
-  margin-bottom: 50px;
+.section-advantages .content-advantages .block-advantage {
+  width: 35%;
+  margin: 0 50px 50px 0;
 }
 
-.section-advantages .content-advantages .block-lists .advantages-list__header {
+.section-advantages .content-advantages .block-advantage__header {
+  position: relative;
+  left: 50px;
   padding: 15px 0;
   font-size: 18px;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
 }
 
-.section-advantages .content-advantages .block-lists .advantages-list__min-logo {
-  width: 28px;
-  height: 28px;
+.section-advantages .content-advantages .block-advantage__header::before {
+  content: "";
+  background: #0B6F4B;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  line-height: 50px;
+  text-align: center;
+  bottom: 7px;
+  left: -50px;
 }
 
-.section-advantages .content-advantages .block-lists .advantages-list__min-logo_number_1 {
-  margin-bottom: 8px;
-  height: 20px;
-  width: 32px;
+.section-advantages .content-advantages .block-advantage__paragraph {
+  line-height: 30px;
+  text-align: justify;
 }
 
-.section-advantages .content-advantages .block-lists .advantages-list__item {
-  padding: 5px 0;
+.section-advantages .content-advantages .block-advantage-form__header::before {
+  content: url(../img/about/min_logo_white5.png);
+  line-height: 50px;
+  text-align: center;
 }
 
-.section-advantages .content-advantages .right-img {
-  margin-top: 20px;
-  width: 40%;
-  height: 40%;
+.section-advantages .content-advantages .block-advantage-form__button-form {
+  display: block;
+  width: 150px;
+  height: 50px;
+  margin: 10px auto;
+  background-color: #0B6F4B;
+}
+
+.section-advantages .content-advantages .block-advantage-form__link-form {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 48px;
+}
+
+.section-advantages .content-advantages .block-advantage-room__header::before {
+  content: url(../img/about/min_logo_white1.png);
+}
+
+.section-advantages .content-advantages .block-advantage-furniture__header::before {
+  content: url(../img/about/min_logo_white3.png);
+}
+
+.section-advantages .content-advantages .block-advantage-work__header::before {
+  content: url(../img/about/min_logo_white2.png);
+}
+
+.section-advantages .content-advantages .block-advantage-guarantee__header::before {
+  content: url(../img/about/min_logo_white4.png);
 }
 
 @media (max-width: 575px) {
-  .section-advantages {
-    padding: 10px;
-  }
   .section-advantages__header {
+    width: 230px;
     position: relative;
     left: 26px;
     font-size: 20px;
     text-transform: uppercase;
     font-weight: bold;
     font-family: "Montserrat", sans-serif;
-    width: 85%;
   }
   .section-advantages__header::before {
     content: "";
@@ -716,33 +711,28 @@ body {
   }
   .section-advantages .content-advantages {
     flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
   }
-  .section-advantages .content-advantages .block-lists {
-    width: 100%;
-    text-align: center;
+  .section-advantages .content-advantages .block-advantage {
+    width: 80%;
+    margin: 0 0 25px 0;
   }
-  .section-advantages .content-advantages .block-lists .advantages-list {
-    margin-bottom: 100px;
-    width: 100%;
-  }
-  .section-advantages .content-advantages .right-img {
-    width: 90%;
-    margin: auto;
+  .section-advantages .content-advantages .block-advantage__header {
+    font-size: 16px;
+    width: 200px;
   }
 }
 
-@media (min-width: 576px) and (max-width: 991px) {
-  .section-advantages {
-    padding: 10px;
-  }
+@media (min-width: 576px) and (max-width: 767px) {
   .section-advantages__header {
+    width: 350px;
     position: relative;
     left: 28px;
     font-size: 24px;
     text-transform: uppercase;
     font-weight: bold;
     font-family: "Montserrat", sans-serif;
-    width: 350px;
   }
   .section-advantages__header::before {
     content: "";
@@ -755,164 +745,17 @@ body {
   }
   .section-advantages .content-advantages {
     flex-direction: column;
+    align-items: center;
   }
-  .section-advantages .content-advantages .block-lists {
-    width: 100%;
-    text-align: center;
-  }
-  .section-advantages .content-advantages .right-img {
+  .section-advantages .content-advantages .block-advantage {
     width: 70%;
-    margin: auto;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1299px) {
-  .section-advantages {
-    padding: 10px;
-  }
-  .section-advantages__header {
-    width: 450px;
-  }
-}
-
-.section-portfolio {
-  margin-top: 200px;
-}
-
-.section-portfolio__header {
-  position: relative;
-  left: 30px;
-  font-size: 30px;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-family: "Montserrat", sans-serif;
-  width: 350px;
-  margin: 0 auto;
-}
-
-.section-portfolio__header::before {
-  content: "";
-  width: 25px;
-  height: 25px;
-  background-color: #0B6F4B;
-  position: absolute;
-  left: -30px;
-  top: 3px;
-}
-
-.section-portfolio .content-portfolio {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 50px;
-}
-
-.section-portfolio .block-category {
-  font-family: "Montserrat", sans-serif;
-}
-
-.section-portfolio .block-category__header {
-  font-size: 25px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.section-portfolio .block-category .category-list {
-  margin-top: 25px;
-}
-
-.section-portfolio .block-category .category-list__button {
-  width: 100%;
-  text-align: left;
-  padding: 10px;
-  font-size: 18px;
-  background-color: #ffffff;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #60606E;
-}
-
-.section-portfolio .block-category .category-list__button:hover {
-  background-color: #0B6F4B;
-  color: #ffffff;
-}
-
-@media (max-width: 575px) {
-  .section-portfolio {
-    padding: 10px;
-  }
-  .section-portfolio__header {
-    position: relative;
-    left: 26px;
-    font-size: 20px;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-family: "Montserrat", sans-serif;
-    width: 85%;
-  }
-  .section-portfolio__header::before {
-    content: "";
-    width: 18px;
-    height: 18px;
-    background-color: #0B6F4B;
-    position: absolute;
-    left: -26px;
-    top: 1px;
-  }
-  .section-portfolio .content-portfolio {
-    flex-direction: column;
-    align-items: center;
-  }
-  .section-portfolio .block-category__header {
-    display: none;
-  }
-  .section-portfolio .block-category .category-list {
-    margin-top: 10px;
-  }
-  .section-portfolio .block-category .category-list__button {
-    text-align: center;
-  }
-  .section-portfolio .block-slider {
-    margin-top: 50px;
-  }
-  .section-portfolio .block-slider .fotorama {
-    width: 300px;
-  }
-}
-
-@media (min-width: 576px) and (max-width: 767px) {
-  .section-portfolio {
-    padding: 10px;
-  }
-  .section-portfolio__header {
-    width: 330px;
-  }
-  .section-portfolio .content-portfolio {
-    flex-direction: column;
-    align-items: center;
-  }
-  .section-portfolio .block-category__header {
-    display: none;
-  }
-  .section-portfolio .block-category .category-list {
-    margin-top: 10px;
-  }
-  .section-portfolio .block-category .category-list__button {
-    text-align: center;
-  }
-  .section-portfolio .block-slider {
-    margin-top: 50px;
-  }
-  .section-portfolio .block-slider .fotorama {
-    width: 480px;
+    margin: 25px 0;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1299px) {
-  .section-portfolio {
-    padding: 10px;
-  }
-  .section-portfolio .fotorama {
-    width: 480px;
+  .section-advantages__header {
+    width: 400px;
   }
 }
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=about.css.map */
