@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Портфолио</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">  <!-- Слайдер -->
+    <link rel="shortcut icon" href="./img/favicon.ico" type="img/x-icon">
+    <link rel="stylesheet" href="css/general-styles.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+</head>
+<body>
+    <div class="content">
+  	    <div class="content-center">
+            <!-- Header -->
+            <header class="header">
+                <div class="head">
+                    <div class="head__title">Repair & Construction Team</div>
+                    <div class="head__phone">+7 (913) 983-56-58</div>
+                </div>
+                <nav class="navigation">
+                    <ul class="menu">
+                        <li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
+                        <li class="menu__item"><a href="about.html" class="menu__link">О компании</a></li>
+                        <li class="menu__item"><a href="portfolio.html" class="menu__link">Портфолио</a></li>
+                        <li class="menu__item"><a href="service.html" class="menu__link">Услуги и цены</a></li>
+                        <li class="menu__item"><a href="contact.html" class="menu__link">Контакты</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Заявка на ремонт</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <!-- /Header -->
+            
+            <!-- Section Main Title -->
+            <section class="section-main-title">
+                <div class="top-min-title">R&C TEAM</div>
+                <div class="title">Ремонт в Новосибирске</div>
+                <div class="subtitle-pages">Портфолио</div>
+            </section>
+            <!-- /Section Main Title -->
+
+            <!-- Section Portfolio -->
+            <section class="section-portfolio">
+                <div class="block-category">
+                    <div class="block-category__header">Выберите Категорию</div>
+                    <ul class="category-list">
+                        <li><button class="category-list__button room" onclick="changeCategoryPortfolio(0, 'room')">Жилые комнаты</button></li>
+                        <li><button class="category-list__button bathroom" onclick="changeCategoryPortfolio(1, 'bathroom')">Ванные комнаты</button></li>
+                        <li><button class="category-list__button kitchen" onclick="changeCategoryPortfolio(2, 'kitchen')">Кухни</button></li>
+                        <li><button class="category-list__button street-work" onclick="changeCategoryPortfolio(3, 'street-work')">Уличные работы</button></li>
+                        <li><button class="category-list__button furniture" onclick="changeCategoryPortfolio(4, 'furniture')">Мебель под заказ</button></li>
+                    </ul>
+                </div>
+                <div class="block-slider block-slider_item_1">
+                    <div class="fotorama" data-autoplay="3000">
+                        <img src="./img/photo/room/1.jpg">
+                        <img src="./img/photo/room/2.jpg">
+                        <img src="./img/photo/room/3.jpg">
+                        <img src="./img/photo/room/4.jpg">
+                        <img src="./img/photo/room/5.jpg">
+                        <img src="./img/photo/room/6.jpg">
+                        <img src="./img/photo/room/7.jpg">
+                        <img src="./img/photo/room/17.jpg">
+                        <img src="./img/photo/room/18.jpg">
+                        <img src="./img/photo/room/20.jpg">
+                        <img src="./img/photo/room/21.jpg">
+                        <img src="./img/photo/room/22.jpg">
+                        <img src="./img/photo/room/23.jpg">
+                        <img src="./img/photo/room/8.jpg">
+                    </div>
+                    <div class="fotorama" data-autoplay="3000">
+                        <img src="./img/photo/room/9.jpg">
+                        <img src="./img/photo/room/10.jpg">
+                        <img src="./img/photo/room/11.jpg">
+                        <img src="./img/photo/room/12.jpg">
+                        <img src="./img/photo/room/13.jpg">
+                        <img src="./img/photo/room/14.jpg">
+                        <img src="./img/photo/room/16.jpg">
+                    </div>
+                </div>
+                <div class="block-slider block-slider_item_2">
+                    <div class="fotorama" data-autoplay="3000">
+                        <img src="./img/photo/bathroom/1.jpg">
+                        <img src="./img/photo/bathroom/2.jpg">
+                        <img src="./img/photo/bathroom/3.jpg">
+                        <img src="./img/photo/bathroom/4.jpg">
+                        <img src="./img/photo/bathroom/6.jpg">
+                        <img src="./img/photo/bathroom/8.jpg">
+                        <img src="./img/photo/bathroom/9.jpg">
+                    </div>
+                    <div class="fotorama" data-autoplay="3000">
+                        <img src="./img/photo/bathroom/5.jpg">
+                        <img src="./img/photo/bathroom/7.jpg">
+                        <img src="./img/photo/bathroom/10.jpg">
+                    </div>
+                </div>
+                <div class="block-slider block-slider_item_3">
+                    <div class="fotorama" data-autoplay="3000">
+                        <img src="./img/photo/kitchen/1.jpg">
+                        <img src="./img/photo/kitchen/2.jpg">
+                        <img src="./img/photo/kitchen/3.jpg">
+                    </div>
+                </div>
+                <div class="block-slider block-slider_item_4">                    
+                    <div class="fotorama" data-autoplay="3000" data-height="720px">
+                        <img src="./img/photo/street work/1.jpeg">
+                        <img src="./img/photo/street work/2.jpeg">
+                        <img src="./img/photo/street work/3.jpeg">
+                        <img src="./img/photo/street work/4.jpeg">
+                        <img src="./img/photo/street work/5.jpeg">
+                        <img src="./img/photo/street work/6.jpeg">
+                        <img src="./img/photo/street work/7.jpeg">
+                        <img src="./img/photo/street work/8.jpeg">
+                        <img src="./img/photo/street work/9.jpeg">
+                        <img src="./img/photo/street work/10.jpeg">
+                        <img src="./img/photo/street work/11.jpeg">
+                        <img src="./img/photo/street work/12.jpeg">
+                        <img src="./img/photo/street work/13.jpeg">
+                        <img src="./img/photo/street work/14.jpeg">
+                        <img src="./img/photo/street work/15.jpeg">
+                        <img src="./img/photo/street work/16.jpeg">
+                        <img src="./img/photo/street work/17.jpeg">
+                        <img src="./img/photo/street work/18.jpeg">
+                    </div>
+                </div>
+                <div class="block-slider block-slider_item_5">
+                    <div class="fotorama" data-autoplay="3000" data-height="720px">
+                        <img src="./img/photo/furniture/1.jpeg">
+                        <img src="./img/photo/furniture/2.jpeg">
+                        <img src="./img/photo/furniture/3.jpeg">
+                        <img src="./img/photo/furniture/4.jpeg">
+                        <img src="./img/photo/furniture/5.jpg">
+                        <img src="./img/photo/furniture/6.jpeg">
+                        <img src="./img/photo/furniture/7.jpeg">
+                        <img src="./img/photo/furniture/8.jpeg">
+                    </div>
+                </div>
+            </section>
+            <!-- /Section Portfolio -->
+            
+            <!-- Section Feedback Form -->
+            <section class="section-feedback-form">
+                <div class="block-left-content">
+                    <div class="block-left-content__header">Хочешь заказать ремонт или мебель? <br>Звони или заполняй форму заявки. <br>Мы тебя ждем!</div>
+                    <button class="block-left-content__button-form">Заполнить заявку</button>
+                </div>
+                <div class="window">
+                    <div class="window__header">Хотите задать вопрос по ремонту?</div>
+                    <div class="window__paragraph">Заполните форму, и мы свяжемся с вами в ближайшее время.</div>
+                    <form action="" class="form">
+                        <div class="block-left-input">
+                            <input type="text" class="form__input form__input_type_text" placeholder="Ваше имя*" name="name" required>
+                            <input type="tel" class="form__input form__input_type_tel" placeholder="Ваш телефон*" name="tel" required>
+                        </div>
+                        <input type="submit" class="form__input form__input_type_submit" name="submit">
+                    </form>
+                </div>
+            </section>
+            <!-- /Section Feedback Form -->
+
+            <!-- Footer -->
+            <footer class="footer">
+                <nav class="navigation">
+                    <ul class="menu">
+                        <li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
+                        <li class="menu__item"><a href="about.html" class="menu__link">О компании</a></li>
+                        <li class="menu__item"><a href="portfolio.html" class="menu__link">Портфолио</a></li>
+                        <li class="menu__item"><a href="service.html" class="menu__link">Услуги и цены</a></li>
+                        <li class="menu__item"><a href="contact.html" class="menu__link">Контакты</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Заявка на ремонт</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__copyright">Создано R&C Team 2019. Все права защищены.</div>
+                <ul class="social">
+                    <li><a href="https://vk.com/rcteam54" class="social__item" target="_blank"><img src="./img/vk.png"></a></li>
+                    <li><a href="https://www.instagram.com/rcteam54/" class="social__item" target="_blank"><img src="./img/inst.png"></a></a></li>
+                </ul>
+            </footer>
+            <!-- /Footer -->
+        </div>
+    </div>
+    <script src="./js/portfolio.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- Слайдер -->
+</body>
+</html>

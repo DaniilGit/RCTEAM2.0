@@ -16,12 +16,13 @@ a {
   box-sizing: border-box;
 }
 
-button, input[type=submit] {
+button, input[type=submit], button:focus {
   border: none;
+  outline: none;
   cursor: pointer;
 }
 
-button:hover, input[type=submit]:hover {
+button:hover, input[type=submit]:hover, button:focus:hover {
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
 }
 

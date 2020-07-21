@@ -16,12 +16,13 @@ a {
   box-sizing: border-box;
 }
 
-button, input[type=submit] {
+button, input[type=submit], button:focus {
   border: none;
+  outline: none;
   cursor: pointer;
 }
 
-button:hover, input[type=submit]:hover {
+button:hover, input[type=submit]:hover, button:focus:hover {
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
 }
 
@@ -535,10 +536,11 @@ body {
 }
 
 .section-contacts .content__left {
-  float: left;
+  display: inline;
 }
 
 .section-contacts .content__right {
+  display: inline-block;
   float: right;
 }
 
@@ -548,7 +550,7 @@ body {
     align-items: center;
   }
   .section-contacts .block-contacts {
-    width: 80%;
+    width: 84%;
   }
   .section-contacts .block-contacts .content__item {
     width: 100%;
