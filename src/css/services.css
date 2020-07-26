@@ -1,0 +1,321 @@
+.section-services {
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-services .block-list__header {
+  position: relative;
+  left: 30px;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+
+.section-services .block-list__header::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-color: #0B6F4B;
+  position: absolute;
+  left: -30px;
+  top: 3px;
+}
+
+.section-services .block-list .main-list__button, .section-services .block-list .additional-list__button {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #cdcdcd;
+  border-bottom: none;
+  background-color: #ffffff;
+  font-weight: bold;
+  text-align: left;
+  font-size: 14px;
+}
+
+.section-services .block-list .main-list__button:hover, .section-services .block-list .additional-list__button:hover {
+  box-shadow: none;
+  border-left: 3px solid #0B6F4B;
+  color: #0B6F4B;
+}
+
+.section-services .block-list .button-last {
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.section-services .block-list .main-list {
+  margin-top: 25px;
+}
+
+.section-services .block-list .main-list__item {
+  position: relative;
+  width: 250px;
+  height: 50px;
+  z-index: 1;
+}
+
+.section-services .block-list .main-list__finishing-work {
+  position: relative;
+  z-index: 1;
+}
+
+.section-services .block-list .main-list .additional-list {
+  position: relative;
+  left: 0;
+  z-index: 0;
+  bottom: 50px;
+  transition: left 0.5s ease-out;
+}
+
+.section-services .block-list .main-list__finishing-work:hover + .additional-list, .section-services .block-list .main-list .additional-list:hover {
+  left: 250px;
+  margin-bottom: 50px;
+}
+
+.section-services .block-content {
+  width: 70%;
+}
+
+.section-services .block-content .block-item {
+  display: none;
+}
+
+.section-services .block-content .block-item__header {
+  position: relative;
+  left: 30px;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+
+.section-services .block-content .block-item__header::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-color: #0B6F4B;
+  position: absolute;
+  left: -30px;
+  top: 3px;
+}
+
+.section-services .block-content .block-item__img {
+  width: 40%;
+  float: right;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.section-services .block-content .block-item__paragraph {
+  margin-top: 10px;
+  width: 60%;
+  line-height: 30px;
+  text-align: justify;
+}
+
+.section-services .block-content .block-item__button {
+  width: 165px;
+  height: 50px;
+  margin: 20px auto;
+  background-color: #0B6F4B;
+}
+
+.section-services .block-content .block-item__link {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-transform: uppercase;
+  line-height: 48px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.section-services .block-content .block-item__list {
+  margin-left: 25px;
+  list-style-type: initial;
+}
+
+.section-services .block-content .block-table {
+  display: none;
+}
+
+.section-services .block-content .block-table__header {
+  position: relative;
+  left: 30px;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+
+.section-services .block-content .block-table__header::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-color: #0B6F4B;
+  position: absolute;
+  left: -30px;
+  top: 3px;
+}
+
+.section-services .block-content .table {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-collapse: collapse;
+}
+
+.section-services .block-content .table__header {
+  text-align: left;
+  font-size: 20px;
+  background: #0B6F4B;
+}
+
+.section-services .block-content .table__caption {
+  margin-bottom: 10px;
+  text-align: left;
+  font-size: 28px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.section-services .block-content .table__center {
+  background: #60606E;
+  color: white;
+  text-align: center;
+}
+
+.section-services .block-content .table tr {
+  border: 1px solid #60606e;
+  width: 800px;
+}
+
+.section-services .block-content .table tr td, .section-services .block-content .table tr th {
+  padding: 5px;
+  width: 150px;
+  border: 1px solid #60606e;
+}
+
+.section-services .block-content .table tr td:first-of-type, .section-services .block-content .table tr th:first-of-type {
+  width: 800px;
+}
+
+.section-services .block-content .table tr:nth-of-type(2n + 1) {
+  background: #cdcdcd;
+}
+
+.section-services .block-content .table tr:first-of-type, .section-services .block-content .table tr:hover {
+  background: #0B6F4B;
+  color: white;
+}
+
+.section-rates {
+  margin-top: 200px;
+}
+
+.section-rates__header {
+  position: relative;
+  left: 30px;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  width: 350px;
+  margin: auto;
+}
+
+.section-rates__header::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-color: #0B6F4B;
+  position: absolute;
+  left: -30px;
+  top: 3px;
+}
+
+.section-rates .block-content {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-rates .block-content .block-rate {
+  height: 700px;
+  flex-basis: 32%;
+  border-top: 7px solid #0B6F4B;
+}
+
+.section-rates .block-content .block-rate__header {
+  margin: 20px 10px;
+  position: relative;
+  left: 30px;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  left: 0;
+}
+
+.section-rates .block-content .block-rate__header::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-color: #0B6F4B;
+  position: absolute;
+  left: -30px;
+  top: 3px;
+}
+
+.section-rates .block-content .block-rate__header::before {
+  display: none;
+}
+
+.section-rates .block-content .block-rate__price {
+  width: 175px;
+  margin-left: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px 20px 10px;
+  line-height: 25px;
+  background-color: #0B6F4B;
+  color: #ffffff;
+}
+
+.section-rates .block-content .block-rate__img {
+  border: 3px solid #0B6F4B;
+  border-radius: 50%;
+  margin-top: 25px;
+  margin-left: 112.5px;
+  width: 150px;
+  height: 150px;
+}
+
+.section-rates .block-content .block-rate__list {
+  height: 300px;
+  list-style-type: initial;
+  padding: 25px;
+  text-align: left;
+}
+
+.section-rates .block-content .block-rate__button {
+  width: 165px;
+  height: 50px;
+  margin-left: 102.5px;
+  background-color: #0B6F4B;
+}
+
+.section-rates .block-content .block-rate__link {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-transform: uppercase;
+  line-height: 48px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.section-rates .block-content .block-rate:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3);
+}
+/*# sourceMappingURL=services.css.map */

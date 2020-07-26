@@ -20,6 +20,8 @@ button, input[type=submit], button:focus {
   border: none;
   outline: none;
   cursor: pointer;
+  color: #60606E;
+  font-family: "Open Sans", sans-serif;
 }
 
 button:hover, input[type=submit]:hover, button:focus:hover {
@@ -37,14 +39,12 @@ body {
 .content {
   width: 100%;
   max-width: 1300px;
-  height: 1000px;
   margin: 0 auto;
 }
 
 .content-center {
   width: 100%;
   max-width: 1200px;
-  height: 1000px;
   margin: 0 auto;
 }
 
