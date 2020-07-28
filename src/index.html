@@ -26,7 +26,7 @@
                         <li class="menu__item"><a href="portfolio.html" class="menu__link">Портфолио</a></li>
                         <li class="menu__item"><a href="services.html" class="menu__link">Услуги и цены</a></li>
                         <li class="menu__item"><a href="contact.html" class="menu__link">Контакты</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Заявка на ремонт</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link" onclick="showModalWin('modal-form')">Заявка на ремонт</a></li>
                     </ul>
                 </nav>
             </header>
@@ -203,7 +203,7 @@
             <section class="section-feedback-form">
                 <div class="block-left-content">
                     <div class="block-left-content__header">Хочешь заказать ремонт или мебель? <br>Звони или заполняй форму заявки. <br>Мы тебя ждем!</div>
-                    <button class="block-left-content__button-form">Заполнить заявку</button>
+                    <button class="block-left-content__button-form"><a href="#" class="block-left-content__link" onclick="showModalWin('modal-form')">Заполнить заявку</a></button>
                 </div>
                 <div class="window">
                     <div class="window__header">Хотите задать вопрос по ремонту?</div>
@@ -228,7 +228,7 @@
                         <li class="menu__item"><a href="portfolio.html" class="menu__link">Портфолио</a></li>
                         <li class="menu__item"><a href="services.html" class="menu__link">Услуги и цены</a></li>
                         <li class="menu__item"><a href="contact.html" class="menu__link">Контакты</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Заявка на ремонт</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link" onclick="showModalWin('modal-form')">Заявка на ремонт</a></li>
                     </ul>
                 </nav>
                 <div class="footer__copyright">Создано R&C Team 2019. Все права защищены.</div>
@@ -240,7 +240,189 @@
             <!-- /Footer -->
         </div>
     </div>
+
+    <!-- Modal Window Form-->
+    <div class="modal-form" id="modal-form">
+        <div class="modal-form__mobile-version">Чтобы заполнить анкету, зайдите на наш сайт с помощью комьютера или планшета</div>
+        <form action="php/send_form.php" method="post" class="form">
+            <div class="form__header">Анкета на ремонт помещения</div>
+            <div class="form__paragraph">Анкета на ремонт помещения предназначена для предварительной оценки стоимости ремонта и черновых материалов.</div>
+            <div class="form__paragraph">Вам необходимо подробно заполнить поля в свободной форме, если затрудняетесь ответить на какой-то вопрос, ставьте прочерк.</div>
+            <div class="form__paragraph">После получения анкеты мы свяжемся с Вами в течение 24 часов, сообщим стоимость всех работ и обсудим все возникшие вопросы.</div>
+                <div class="form__additional-header">1. Общие сведения о заказчике</div>
+                <div class="fio">
+                    <label for="fio">ФИО заказчика:</label><textarea id="fio" placeholder="Ваша Фамилия Имя и Отчество" name="fio" required></textarea>
+                </div>
+                <div class="clear"></div>
+                <div class="adress">
+                    <label for="adress">Адрес помещения:</label><textarea id="adress" placeholder="Адрес ремонтируемого помещения" name="adress" required></textarea>
+                </div>
+                <div class="clear"></div>
+                <div class="phone">
+                    <label for="phone">Телефон заказчика:</label><textarea id="phone" placeholder="Ваш телефон или телефоны, по которым можно с Вами связаться." name="phone" required></textarea>
+                </div>
+                <div class="clear"></div>
+                <div class="email">
+                    <label for="email">E-mail:</label><textarea id="email" placeholder="Ваш электронный адрес для отправки Вам ответа с предварительной сметой и договором." name="email"></textarea>
+                </div>
+                <div class="clear"></div>
+                <div class="data">
+                    <label for="data">Когда Вы готовы приступить к ремонту:</label><textarea id="data" placeholder="Укажите планируемую дату начала ремонта. Если у Вас новостройка и дом еще не сдан госкомиссии, то просьба указать примерную дату сдачи дома." name="data"required></textarea>
+                </div>
+                <div class="clear"></div>
+                <div class="info">
+                    <label for="info">Источник информации:</label><textarea id="info" placeholder="Из каких источников Вы узнали о нашей Компании? Если Вы нашли наш сайт через поисковую систему или социальную сеть, то просьба указать, через какую именно." name="info" required></textarea>
+                </div>
+                <div class="form__additional-header">2. ОБЩИЕ СВЕДЕНИЯ О РЕМОНТИРУЕМОМ ПОМЕЩЕНИИ</div>
+                <div class="area">
+                    <label for="area">Общая площадь (S):</label><textarea id="area" placeholder="Какова общая ремонтируемая площадь вместе с балконами и всеми жилыми и нежилыми помещениями?" name="area"></textarea>
+                </div>
+                <div class="clear"></div>
+                <div class="height">
+                    <label for="height">Высота потолков (H):</label><textarea id="height" placeholder="Какова высота потолков в ремонтируемом помещении?" name="height"></textarea>
+                </div>
+                <div class="clear"></div>
+                <div class="type">
+                    <label for="type">Тип помещения:</label><textarea id="type" placeholder="Это новостройка или вторичное жилье? Если это вторичное, значит потребуется большой объем работ по демонтажу старых напольных, настенных и потолочных покрытий, и вывоз мусора на спецтранспорте. Во время проведения ремонтных работ помещение будет свободное (без личных вещей, без мебели, без проживающих хозяев) или нет?" name="type"></textarea>
+                </div>
+                <div class="clear"></div>
+                <div class="lift">
+                    <label for="lift">Наличие лифта:</label><textarea id="lift" placeholder="Есть ли грузовой или пассажирский лифт, или нет никакого?" name="lift"></textarea>
+                </div>
+                <div class="clear"></div>
+                <div class="design">
+                    <label for="design">Наличие дизайн-проекта:</label><textarea id="design" placeholder="Есть ли у Вас дизайн-проект? Если нет, то нужен ли и будете ли его делать? Если необходим, то мы его будем разрабатывать или сторонняя компания?" name="design"></textarea>
+                </div>
+                <div class="clear"></div>
+                <div class="redevelopment">
+                    <label for="redevelopment">Необходимость согласования перепланировки:</label><textarea id="redevelopment" placeholder="Будет ли перепланировка помещения, и планируете ли Вы ее согласовывать? Если согласование необходимо, то кто это будет делать, Вы сами или возложите эти проблемы на нас?" name="redevelopment"></textarea>
+                </div>
+                <div class="form__additional-header">3. СПИСОК ОБЩИХ РАБОТ</div>
+                <div class="dem">
+                    <label for="dem">Демонтажные работы</label><textarea id="dem" placeholder="Укажите, какие будут демонтажные работы? Например, демонтаж напольных, настенных и потолочных старых покрытий, демонтаж дверных блоков и сантехнической кабины. Если планируется демонтаж стен, то указать каких именно (в каких комнатах) и если есть возможность, определить, монолитная (несущая) это стена или нет? Демонтажные работы выполняются без сохранения старых материалов, приборов и оборудования." name="dem"></textarea>
+                </div>
+                <div class="clear"></div>
+                <div class="wall">
+                    <label for="wall">Монтаж стен:</label><textarea id="wall" placeholder="Укажите, какие новые стены и где будут возводиться (в каких комнатах или между какими помещениями)?" name="wall"></textarea>
+                </div>
+                <div class="clear"></div>
+                <div class="mono">
+                    <label for="mono">Монолитные конструкции:</label><textarea id="mono" placeholder="Укажите, планируется ли изменение в монолитных несущих стенах? Например, создание арок в монолите, новых дверных проемов, объединение лоджий с комнатой или кухней и т.п. Помните, что большинство изменений в монолитных конструкциях требует узаконивания и согласования с БТИ и другими службами." name="mono"></textarea>
+                </div>
+                <div class="clear"></div>
+                <div class="electro">
+                    <label for="electro">Электромонтажные работы:</label><textarea id="electro" placeholder="Опишите, что планируется делать с электричеством? Ничего, полностью меняем, оставляем старые провода и только подключаем розетки и освещение, частично наращиваем розетки и выключатели от текущей проводки, переносим щиток с автоматами в квартиру? Если дом старый, то рекомендуется заменить полностью проводку от электрощита." name="electro"></textarea>
+                </div>
+                <div class="clear"></div>
+                <div class="sant">
+                    <label for="sant">Сантехнические работы:</label><textarea id="sant" placeholder="Опишите, что планируется делать с сантехникой? Ничего, полностью меняем или оставляем старые трубы и только подключаем сантехнические приборы (ванну, унитаз, смесители и т.п.)? Если дом старый, то рекомендуется полностью заменить всю сантехнику от стояков." name="sant"></textarea>
+                </div>
+                <div class="clear"></div>
+                <div class="floor">
+                    <label for="floor">Выравнивание пола:</label><textarea id="floor" placeholder="Выравниваем идеально или оставляем как есть? Выравнивать пол не требуется, если уже кем-то до нас была залита стяжка или Вы решили оставить старое финишное напольное покрытие (например, паркет)." name="floor"></textarea>
+                </div>
+                <div class="clear"></div>
+                <div class="alignment_wall">
+                    <label for="alignment_wall">Выравнивание стен:</label><textarea id="alignment_wall" placeholder="Выравниваем идеально, визуально или оставляем как есть? При идеальном выравнивании выставляются маяки и стены выравниваются строго под уровень – в данном варианте идет большой расход материалов, а как следствие увеличение сроков и стоимости ремонта. При визуальном выравнивании все стены будут такие же гладкие, как и при идеальном выравнивании, но допускается перепад уровня от пола до потолка до 1 сантиметра." name="alignment_wall"></textarea>
+                </div>
+                <div class="clear"></div>
+                <div class="alignment_ceiling">
+                    <label for="alignment_ceiling">Выравнивание потолков:</label><textarea id="alignment_ceiling" placeholder="Выравниваем идеально, визуально или оставляем как есть? При идеальном выравнивании выставляются маяки и потолки выравниваются строго под уровень – в данном варианте идет большой расход материалов, а как следствие увеличение сроков и стоимости ремонта. При визуальном выравнивании все потолки будут такие же гладкие, как и при идеальном выравнивании, но допускается перепад уровня от одной стены до другой до 1 сантиметра." name="alignment_ceiling"></textarea>
+                </div>
+                <div class="clear"></div>
+                <div class="drywall">
+                    <label for="drywall">Гиспокартоновые конструкции:</label><textarea id="drywall" placeholder="Будут ли какие-либо конструкции из гипсокартона? Например, короба для труб и стояков, арки, многоуровневые потолки (если да, то в каких комнатах и сколько уровней, с подсветкой или без), гипсокартоновые стены, ниши и т.п." name="drywall"></textarea>
+                </div>
+                <div class="clear"></div>
+                <div class="radiator">
+                    <label for="radiator">Замена радиаторов:</label><textarea id="radiator" placeholder="Опишите, что делаем с радиаторами? Оставляем старые радиаторы или устанавливаем новые? В каком количестве? Необходимы ли сварочные работы, чтобы демонтировать старые радиаторы? При замене радиаторов, если у них нет кранов, чтобы перекрыть стояки и демонтировать старые радиаторы, сварочные работы необходимы. При этом нужно учесть, что коммунальная служба возьмет от 3 до 5 тыс. рублей за отключение каждого стояка. Так же коммунальная служба может отказать Вам и нам в отключение стояков при низкой температуре на улице (в зимнее время)." name="radiator"></textarea>
+                </div>
+                <div class="clear"></div>
+                <div class="gas">
+                    <label for="gas">Изменение газовой точки:</label><textarea id="gas" placeholder="Газовую точку оставляем на старом месте или переносим на новое (если она есть)?" name="gas"></textarea>
+                </div>
+                <div class="clear"></div>
+                <div class="heating">
+                    <label for="heating">Стояки отполения:</label><textarea id="heating" placeholder="Каким образом в квартире проложены стояки отопления (горизонтально по полу или вертикально вдоль стен)? Если стояки вертикальные и проходят вдоль стен, что необходимо с ними делать (шкурить и красить или закрывать в гипсокартоновый короб)?" name="heating"></textarea>
+                </div>
+                <div class="clear"></div>
+                <div class="windows">
+                    <label for="windows">Окна и откосы:</label><textarea id="windows" placeholder="Окна остаются старые или меняем на новые? Если меняем, то кто устанавливает, Мы или Вы сами? ПВХ или деревянные? В каком количестве? Если окна остаются старые и они деревянные, то необходимо ли их шкурить и красить? Опишите, что планируется делать с откосами, устанавливать пластиковые или штукатурить под покраску? Необходимо ли устанавливать новые подоконники?" name="windows"></textarea>
+                </div>
+                <div class="clear"></div>
+                <div class="door">
+                    <label for="door">Входная дверь:</label><textarea id="door" placeholder="Будет ли меняться входная дверь? Кто ее будет менять? Мы или Вы сами?" name="door"></textarea>
+                </div>
+                <div class="clear"></div>
+                <div class="door_meg">
+                    <label for="door_meg">Межкомнатные двери и арки:</label><textarea id="door_meg" placeholder="Сколько будет межкомнатных дверей? Будут ли распашные или раздвижные двери? Если будут арки, то необходимо указать, где и каким образом обрамлены (крашенные или обналичены деревянным наличником или пластиковым уголком)." name="door_meg"></textarea>
+                </div>
+                <div class="clear"></div>
+                <div class="warming">
+                    <label for="warming">Утепление стен:</label><textarea id="warming" placeholder="Будут ли какие-либо стены утепляться? Например, на балконе или лоджии? Если балконы необходимо утеплять, то нужно, чтобы окна были теплые (ПВХ или деревянные), а так же необходимо наличие отопления на балконе, например с помощью системы «теплый пол»." name="warming"></textarea>
+                </div>
+                <div class="clear"></div>
+                <div class="warm_floor">
+                    <label for="warm_floor">Теплый пол:</label><textarea id="warm_floor" placeholder="Будет ли устанавливаться система «теплый пол»? Если да, то где, на кухне, на балконе, в санузле, в коридоре?" name="warm_floor"></textarea>
+                </div>
+                <div class="clear"></div>
+                <div class="gidro">
+                    <label for="gidro">Гидроизоляция:</label><textarea id="gidro" placeholder="Необходимо ли делать гидроизоляцию квартиры для предотвращения затопления соседей? Если да, то всю квартиру или только ванную комнату и санузел? Необходимо ли делать гидроизоляцию потолка для предотвращения протечек от соседей сверху или с крыши (для верхних этажей)? Монтаж гидроизоляции по всей квартиры довольно дорогостоящий процесс, а вот гидроизоляцию санузла делать обязательно (если ее нет)." name="gidro"></textarea>
+                </div>
+                <div class="clear"></div>
+                <div class="sound">
+                    <label for="sound">Звукоизоляция:</label><textarea id="sound" placeholder="Необходимо ли делать звукоизоляцию квартиры для предотвращения проникания посторонних шумов от соседей? Монтаж звукоизоляции довольно дорогостоящий процесс, особенно в части материалов. Важно учесть, что при звукоизоляции стен и потолка Вы себя защищаете от посторонних звуков соседей, а при звукоизоляции пола Вы своих соседей этажом ниже защищаете от ударных шумов из Вашей квартиры." name="sound"></textarea>
+                </div>
+                <div class="clear"></div>
+                <div class="kond">
+                    <label for="kond">Кондиционер и вентиляция:</label><textarea id="kond" placeholder="Будет ли устанавливаться кондиционер (сплит-система) или какой-либо из вариантов приточно-вытяжной вентиляции? Если да, то кто ее будет ставить, Мы или Вы сами? Сколько кондиционеров будет?" name="kond"></textarea>
+                </div>
+                <div class="form__additional-header">4. СПИСОК ПОМЕЩЕНИЙ И ВЕДОМОСТЬ ОТДЕЛКИ</div>
+                <div class="form__paragraph">Отметьте все ремонтируемые комнаты в помещении и укажите их площадь.</div>
+                <div class="point"><input type="checkbox" id="living_room" name="living_room_input"><label for="living_room" class="lab">Гостинная</label><input type="number" placeholder="Площадь, м2" name="living_room"></div>
+                <div class="point"><input type="checkbox" id="bed_room" name="bed_room_input"><label for="bed_room" class="lab">Спальня</label><input type="number" placeholder="Площадь, м2" name="bed_room"></div>
+                <div class="point"><input type="checkbox" id="children_room" name="children_room_input"><label for="children_room" class="lab">Детская комната</label><input type="number" placeholder="Площадь, м2" name="children_room"></div>
+                <div class="point"><input type="checkbox" id="kitchen" name="kitchen_input"><label for="kitchen" class="lab">Кухня</label><input type="number" placeholder="Площадь, м2" name="kitchen"></div>
+                <div class="point"><input type="checkbox" id="corridor" name="corridor_input"><label for="corridor" class="lab">Коридор</label><input type="number" placeholder="Площадь, м2" name="corridor"></div>
+                <div class="point_right"><input type="checkbox" id="bath_room" name="bath_room_input"><label for="bath_room" class="lab">Ванная</label><input type="number" placeholder="Площадь, м2" name="bath_room"></div>
+                <div class="point_right"><input type="checkbox" id="restroom" name="restroom_input"><label for="restroom" class="lab">Санузел</label><input type="number" placeholder="Площадь, м2" name="restroom"></div>
+                <div class="point_right"><input type="checkbox" id="wardrobe" name="wardrobe_input"><label for="wardrobe" class="lab">Гардероб</label><input type="number" placeholder="Площадь, м2" name="wardrobe"></div>
+                <div class="point_right"><input type="checkbox" id="cabinet" name="cabinet_input"><label for="cabinet" class="lab">Кабинет</label><input type="number" placeholder="Площадь, м2" name="cabinet"></div>
+                <div class="point_right"><input type="checkbox" id="loggia" name="loggia_input"><label for="loggia" class="lab">Лоджия</label><input type="number" placeholder="Площадь, м2" name="loggia"></div>
+                <div class="form__additional-header">5. Бюджет</div>
+                <div class="form__paragraph">По возможности укажите планируемый бюджет (или диапазон) денежных средств на производство
+                    ремонтных работ, чтобы мы могли более точно сориентировать Вас о возможности выполнить Ваш
+                    ремонт или более детально проконсультировать Вас, что можно выполнить в рамках Вашего
+                    бюджета. При отсутствии Вашего желания, можете данный раздел не заполнять.</div>
+                <div class="total_budget">
+                    <label for="total_budget">Общий бюджет на все:</label><textarea id="total_budget" name="total_budget"></textarea>
+                </div>
+                <div class="clear"></div>    
+                <div class="works_budget">
+                    <label for="works_budget">На производство работ:</label><textarea id="works_budget" name="works_budget"></textarea>
+                </div>
+                <div class="clear"></div>    
+                <div class="black_works_budget">
+                    <label for="black_works_budget">На черновые материалы:</label><textarea id="black_works_budget" name="black_works_budget"></textarea>
+                </div>
+                <div class="clear"></div>    
+                <div class="white_works_budget">
+                    <label for="white_works_budget">На чистовые материалы:</label><textarea id="white_works_budget" name="white_works_budget"></textarea>
+                </div>
+                <div class="clear"></div>    
+                <div class="furniture_budget">
+                    <label for="furniture_budget">На мебель:</label><textarea id="furniture_budget" name="furniture_budget"></textarea>
+                </div>
+                <div class="form__additional-header">6. Вопросы</div>
+                <div class="form__paragraph">В данном разделе можно указать дополнительные вопросы, которые у Вас появились к нам?</div>
+                <textarea class="questions" placeholder="Ваши вопросы" name="questions"></textarea>    
+                <input type="submit" name="submit"> 
+        </form>
+    </div>
+    <!-- /Modal Window Form-->
+
     <script src="./js/portfolio.js"></script>
+    <script src="./js/form.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
     <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- Слайдер -->
 </body>
