@@ -139,7 +139,7 @@ body {
     top: 8px;
   }
   .header .navigation .menu {
-    position: absolute;
+    position: fixed;
     visibility: hidden;
     top: 0;
     right: -100%;
@@ -148,6 +148,7 @@ body {
     margin: 25px 0;
     background-color: #ffffff;
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+    transition-duration: .25s;
   }
   .header .navigation .menu__item {
     box-sizing: border-box;
@@ -221,7 +222,7 @@ body {
     top: 8px;
   }
   .header .navigation .menu {
-    position: absolute;
+    position: fixed;
     visibility: hidden;
     top: 0;
     right: -100%;
@@ -230,6 +231,7 @@ body {
     margin: 25px 0;
     background-color: #ffffff;
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+    transition-duration: .25s;
   }
   .header .navigation .menu__item {
     box-sizing: border-box;
@@ -912,6 +914,7 @@ body {
   text-align: left;
   font-size: 20px;
   background: #0B6F4B;
+  border: 1px solid #60606E;
 }
 
 .section-services .block-content .table__caption {
@@ -928,14 +931,14 @@ body {
 }
 
 .section-services .block-content .table tr {
-  border: 1px solid #60606e;
+  border: 1px solid #60606E;
   width: 800px;
 }
 
 .section-services .block-content .table tr td, .section-services .block-content .table tr th {
   padding: 5px;
   width: 150px;
-  border: 1px solid #60606e;
+  border: 1px solid #60606E;
 }
 
 .section-services .block-content .table tr td:first-of-type, .section-services .block-content .table tr th:first-of-type {
@@ -959,20 +962,26 @@ body {
   .section-services .block-list__header {
     width: 100px;
   }
+  .section-services .block-list .main-list {
+    height: 775px;
+    margin-top: 0;
+  }
+  .section-services .block-list .main-list__item {
+    position: static;
+  }
   .section-services .block-list .main-list .additional-list {
-    bottom: 50px;
-    transition: bottom 0.5s ease-out;
+    top: 400px;
+    transition: none;
+  }
+  .section-services .block-list .main-list__finishing-work {
+    display: none;
   }
   .section-services .block-list .main-list__finishing-work:hover + .additional-list, .section-services .block-list .main-list .additional-list:hover {
     left: 0;
-    top: 360px;
     margin-bottom: 50px;
   }
   .section-services .block-content {
     width: 100%;
-  }
-  .section-services .block-content .block-item {
-    margin-top: 25px;
   }
   .section-services .block-content .block-item__header {
     position: relative;
@@ -991,6 +1000,27 @@ body {
     position: absolute;
     left: -26px;
     top: 1px;
+  }
+  .section-services .block-content .block-table__header {
+    position: relative;
+    left: 26px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    width: 50%;
+  }
+  .section-services .block-content .block-table__header::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background-color: #0B6F4B;
+    position: absolute;
+    left: -26px;
+    top: 1px;
+  }
+  .section-services .block-content .block-table .table__header, .section-services .block-content .block-table .table__caption {
+    font-size: 16px;
   }
 }
 
