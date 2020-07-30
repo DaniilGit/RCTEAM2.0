@@ -228,6 +228,9 @@
     top: 430px;
     transition: none;
   }
+  .section-services .block-list .main-list .additional-list__button {
+    margin-bottom: -5px;
+  }
   .section-services .block-list .main-list__finishing-work {
     display: none;
   }
