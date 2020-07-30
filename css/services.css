@@ -477,6 +477,9 @@
   .section-rates .block-content .block-rate__list {
     height: 420px;
   }
+  .section-rates .block-content .block-rate__price {
+    width: 200px;
+  }
   .section-rates .block-content .block-rate:hover {
     transform: none;
     box-shadow: none;
