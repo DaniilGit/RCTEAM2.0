@@ -82,6 +82,7 @@
     width: 100%;
   }
   .section-contacts .block-contacts__header {
+    width: 200px;
     position: relative;
     left: 26px;
     font-size: 20px;
@@ -122,6 +123,9 @@
 @media (min-width: 992px) and (max-width: 1299px) {
   .section-contacts .block-contacts {
     margin: 25px;
+  }
+  .section-contacts .block-contacts__header {
+    width: 400px;
   }
   .section-contacts .block-contacts__header {
     position: relative;
