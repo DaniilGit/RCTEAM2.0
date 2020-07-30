@@ -423,9 +423,10 @@ body {
   border: 1px solid #0B6F4B;
 }
 
-.section-feedback-form .window .form__input_type_submit {
+.section-feedback-form .window .form__button {
   width: 150px;
   height: 50px;
+  margin: 0 40px 20px 20px;
   background-color: #0B6F4B;
   color: #ffffff;
   text-transform: uppercase;
@@ -452,12 +453,8 @@ body {
   .section-feedback-form .window .form {
     flex-wrap: wrap;
   }
-  .section-feedback-form .window .form__input:not([type=submit]) {
+  .section-feedback-form .window .form__input {
     width: 200px;
-  }
-  .section-feedback-form .window .form__input_type_submit {
-    background-color: #0B6F4B;
-    border-radius: 0;
   }
 }
 
