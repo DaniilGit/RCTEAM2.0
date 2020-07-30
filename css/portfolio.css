@@ -110,7 +110,6 @@ body {
     z-index: 0;
   }
   .header .navigation__toggle {
-    display: block;
     opacity: 0;
   }
   .header .navigation__button {
@@ -194,7 +193,6 @@ body {
     padding: 10px;
   }
   .header .navigation__toggle {
-    display: block;
     opacity: 0;
   }
   .header .navigation__button {

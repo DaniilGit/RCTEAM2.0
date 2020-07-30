@@ -139,7 +139,7 @@ body {
     top: 8px;
   }
   .header .navigation .menu {
-    position: absolute;
+    position: fixed;
     visibility: hidden;
     top: 0;
     right: -100%;
@@ -148,6 +148,7 @@ body {
     margin: 25px 0;
     background-color: #ffffff;
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+    transition-duration: .25s;
   }
   .header .navigation .menu__item {
     box-sizing: border-box;
@@ -221,7 +222,7 @@ body {
     top: 8px;
   }
   .header .navigation .menu {
-    position: absolute;
+    position: fixed;
     visibility: hidden;
     top: 0;
     right: -100%;
@@ -230,6 +231,7 @@ body {
     margin: 25px 0;
     background-color: #ffffff;
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+    transition-duration: .25s;
   }
   .header .navigation .menu__item {
     box-sizing: border-box;
@@ -816,6 +818,7 @@ body {
     margin: 0 auto;
   }
   .section-main-information .block-main-information__header {
+    width: 240px;
     position: relative;
     left: 28px;
     font-size: 24px;
