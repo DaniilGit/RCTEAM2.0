@@ -218,14 +218,14 @@
     width: 100px;
   }
   .section-services .block-list .main-list {
-    height: 775px;
+    height: 840px;
     margin-top: 0;
   }
   .section-services .block-list .main-list__item {
     position: static;
   }
   .section-services .block-list .main-list .additional-list {
-    top: 400px;
+    top: 430px;
     transition: none;
   }
   .section-services .block-list .main-list__finishing-work {
