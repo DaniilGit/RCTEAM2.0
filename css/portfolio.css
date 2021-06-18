@@ -1,7 +1,11 @@
 .section-portfolio {
   margin-top: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .section-portfolio .block-category {
@@ -56,8 +60,13 @@
   .section-portfolio {
     margin-top: 100px;
     padding: 10px;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .section-portfolio .block-category__header {
     text-align: center;
@@ -80,8 +89,13 @@
   .section-portfolio {
     margin-top: 100px;
     padding: 10px;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .section-portfolio .block-category {
     width: 70%;

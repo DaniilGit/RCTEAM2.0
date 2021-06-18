@@ -2,4 +2,4 @@
 /css/*.map
 /scss
 /css/variable-mixin.css
-../.vscode
+.vscode

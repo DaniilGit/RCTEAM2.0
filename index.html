@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Главная страница</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">  <!-- Слайдер -->
+    <link rel="stylesheet" href="./fotorama/fotorama.css">
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/general-styles.css">
     <link rel="stylesheet" href="css/index.css">
@@ -101,6 +101,333 @@
                 </div>
             </section>
             <!-- /Section Advantages -->
+
+            <!-- Section Calculator --> 
+               <section class="section-calculator">
+                   <div class="section-calculator__header">Калькулятор</div>
+                   <div class="block-content">
+                       <div class="block block-main">
+                            <div class="block-area">                            
+                                <div class="block__header">Общая площадь помещения</div>
+                                <input type="number" class="block-area__input" placeholder="Площадь, м2">
+                            </div>
+                            <div class="block-type-rooms">
+                                <div class="block__header">Тип помещения</div>
+                                <ul class="list-type-rooms">
+                                    <li class="list-type-rooms__item">
+                                        <input type="radio" class="block-content__toggle" id="rooms__toggle_1" name="rooms__toggle">
+                                        <label for="rooms__toggle_1" class="block-content__button">Новостройка</label>
+                                    </li>
+                                    <li class="list-type-rooms__item">
+                                        <input type="radio" class="block-content__toggle" id="rooms__toggle_2" name="rooms__toggle">
+                                        <label for="rooms__toggle_2" class="block-content__button">Вторичное жилье</label>
+                                    </li>
+                                    <li class="list-type-rooms__item">
+                                        <input type="radio" class="block-content__toggle" id="rooms__toggle_3" name="rooms__toggle">
+                                        <label for="rooms__toggle_3" class="block-content__button">Частный дом</label>
+                                    </li>
+                                    <li class="list-type-rooms__item">
+                                        <input type="radio" class="block-content__toggle" id="rooms__toggle_4" name="rooms__toggle">
+                                        <label for="rooms__toggle_4" class="block-content__button">Офис</label>
+                                    </li>
+                                </ul>
+                           </div>
+                       </div>
+                       <div class="block block-other">
+                            <div class="block__header">Дополнительные опции</div>
+                            <div class="block__subheader">Пол</div>
+                            <div class="block-other-content">
+                                <ul class="block-other-content-list">
+                                    <div class="block-other-content-list__header">Подготовка пола</div>
+                                    <li class="block-other-content-list__item">
+                                        <input type="checkbox" class="block-content__toggle" id="floor__toggle_1">
+                                        <label for="floor__toggle_1" class="block-content__button">Не требуется</label>
+                                        <input type="number" class="block-content__area" placeholder="Площадь, м2">
+                                    </li>
+                                    <li class="block-other-content-list__item">
+                                        <input type="checkbox" class="block-content__toggle" id="floor__toggle_2">
+                                        <label for="floor__toggle_2" class="block-content__button">Демонтаж линолеума</label>
+                                        <input type="number" class="block-content__area" placeholder="Площадь, м2">
+                                    </li>
+                                    <li class="block-other-content-list__item">
+                                        <input type="checkbox" class="block-content__toggle" id="floor__toggle_3">
+                                        <label for="floor__toggle_3" class="block-content__button">Разборка деревянного пола</label>
+                                        <input type="number" class="block-content__area" placeholder="Площадь, м2">
+                                    </li>
+                                    <li class="block-other-content-list__item">
+                                        <input type="checkbox" class="block-content__toggle" id="floor__toggle_4">
+                                        <label for="floor__toggle_4" class="block-content__button">Разборка ламината</label>
+                                        <input type="number" class="block-content__area" placeholder="Площадь, м2">
+                                    </li>
+                                    <li class="block-other-content-list__item">
+                                        <input type="checkbox" class="block-content__toggle" id="floor__toggle_5">
+                                        <label for="floor__toggle_5" class="block-content__button">Демонтаж ДВП с пола</label>
+                                        <input type="number" class="block-content__area" placeholder="Площадь, м2">
+                                    </li>
+                                    <li class="block-other-content-list__item">
+                                        <input type="checkbox" class="block-content__toggle" id="floor__toggle_6">
+                                        <label for="floor__toggle_6" class="block-content__button">Демонтаж плитки с пола</label>
+                                        <input type="number" class="block-content__area" placeholder="Площадь, м2">
+                                    </li>
+                                    <li class="block-other-content-list__item">
+                                        <input type="checkbox" class="block-content__toggle" id="floor__toggle_7">
+                                        <label for="floor__toggle_7" class="block-content__button">Устройство стяжки до 5 см.</label>
+                                        <input type="number" class="block-content__area" placeholder="Площадь, м2">
+                                    </li>
+                                    <li class="block-other-content-list__item">
+                                        <input type="checkbox" class="block-content__toggle" id="floor__toggle_16">
+                                        <label for="floor__toggle_16" class="block-content__button">Наливной пол</label>
+                                        <input type="number" class="block-content__area" placeholder="Площадь, м2">
+                                    </li>
+                                </ul>
+                                <ul class="block-other-content-list">
+                                    <div class="block-other-content-list__header">Отделка пола</div>
+                                    <li class="block-other-content-list__item">
+                                        <input type="checkbox" class="block-content__toggle" id="floor__toggle_8">
+                                        <label for="floor__toggle_8" class="block-content__button">Не требуется</label>
+                                        <input type="number" class="block-content__area" placeholder="Площадь, м2">
+                                    </li>
+                                    <li class="block-other-content-list__item">
+                                        <input type="checkbox" class="block-content__toggle" id="floor__toggle_9">
+                                        <label for="floor__toggle_9" class="block-content__button">Укладка паркета</label>
+                                        <input type="number" class="block-content__area" placeholder="Площадь, м2">
+                                    </li>
+                                    <li class="block-other-content-list__item">
+                                        <input type="checkbox" class="block-content__toggle" id="floor__toggle_10">
+                                        <label for="floor__toggle_10" class="block-content__button">Укладка линолеума</label>
+                                        <input type="number" class="block-content__area" placeholder="Площадь, м2">
+                                    </li>
+                                    <li class="block-other-content-list__item">
+                                        <input type="checkbox" class="block-content__toggle" id="floor__toggle_11">
+                                        <label for="floor__toggle_11" class="block-content__button">Укладка ламината</label>
+                                        <input type="number" class="block-content__area" placeholder="Площадь, м2">
+                                    </li>
+                                    <li class="block-other-content-list__item">
+                                        <input type="checkbox" class="block-content__toggle" id="floor__toggle_12">
+                                        <label for="floor__toggle_12" class="block-content__button">Настил ковролина</label>
+                                        <input type="number" class="block-content__area" placeholder="Площадь, м2">
+                                    </li>
+                                    <li class="block-other-content-list__item">
+                                        <input type="checkbox" class="block-content__toggle" id="floor__toggle_13">
+                                        <label for="floor__toggle_13" class="block-content__button">Укладка плитки</label>
+                                        <input type="number" class="block-content__area" placeholder="Площадь, м2">
+                                    </li>
+                                    <li class="block-other-content-list__item">
+                                        <input type="checkbox" class="block-content__toggle" id="floor__toggle_14">
+                                        <label for="floor__toggle_14" class="block-content__button">Окраска пола</label>
+                                        <input type="number" class="block-content__area" placeholder="Площадь, м2">
+                                    </li>
+                                    <li class="block-other-content-list__item">
+                                        <input type="checkbox" class="block-content__toggle" id="floor__toggle_15">
+                                        <label for="floor__toggle_15" class="block-content__button">Укладка пробковых панелей</label>
+                                        <input type="number" class="block-content__area" placeholder="Площадь, м2">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="block__subheader">Потолок</div>
+                            <div class="block-other-content">
+                                <ul class="block-other-content-list">
+                                    <div class="block-other-content-list__header">Подготовка потолка</div>
+                                    <li class="block-other-content-list__item">
+                                        <input type="checkbox" class="block-content__toggle" id="ceiling__toggle_1">
+                                        <label for="ceiling__toggle_1" class="block-content__button">Не требуется</label>
+                                        <input type="number" class="block-content__area" placeholder="Площадь, м2">
+                                    </li>
+                                    <li class="block-other-content-list__item">
+                                        <input type="checkbox" class="block-content__toggle" id="ceiling__toggle_2">
+                                        <label for="ceiling__toggle_2" class="block-content__button">Очистка от обоев</label>
+                                        <input type="number" class="block-content__area" placeholder="Площадь, м2">
+                                    </li>
+                                    <li class="block-other-content-list__item">
+                                        <input type="checkbox" class="block-content__toggle" id="ceiling__toggle_3">
+                                        <label for="ceiling__toggle_3" class="block-content__button">Очистка от краски</label>
+                                        <input type="number" class="block-content__area" placeholder="Площадь, м2">
+                                    </li>
+                                    <li class="block-other-content-list__item">
+                                        <input type="checkbox" class="block-content__toggle" id="ceiling__toggle_5">
+                                        <label for="ceiling__toggle_5" class="block-content__button">Разборка потолка ArmStrong</label>
+                                        <input type="number" class="block-content__area" placeholder="Площадь, м2">
+                                    </li>
+                                    <li class="block-other-content-list__item">
+                                        <input type="checkbox" class="block-content__toggle" id="ceiling_toggle_4">
+                                        <label for="ceiling__toggle_4" class="block-content__button">Демонтаж штукатурки</label>
+                                        <input type="number" class="block-content__area" placeholder="Площадь, м2">
+                                    </li>
+                                    <li class="block-other-content-list__item">
+                                        <input type="checkbox" class="block-content__toggle" id="ceiling__toggle_6">
+                                        <label for="ceiling__toggle_6" class="block-content__button">Шпатлевка и шлифовка</label>
+                                        <input type="number" class="block-content__area" placeholder="Площадь, м2">
+                                    </li>
+                                    <li class="block-other-content-list__item">
+                                        <input type="checkbox" class="block-content__toggle" id="ceiling__toggle_7">
+                                        <label for="ceiling__toggle_7" class="block-content__button">Выравнивание потолка</label>
+                                        <input type="number" class="block-content__area" placeholder="Площадь, м2">
+                                    </li>
+                                </ul>
+                                <ul class="block-other-content-list">
+                                    <div class="block-other-content-list__header">Отделка потолка</div>
+                                    <li class="block-other-content-list__item">
+                                        <input type="checkbox" class="block-content__toggle" id="ceiling__toggle_8">
+                                        <label for="ceiling__toggle_8" class="block-content__button">Не требуется</label>
+                                        <input type="number" class="block-content__area" placeholder="Площадь, м2">
+                                    </li>
+                                    <li class="block-other-content-list__item">
+                                        <input type="checkbox" class="block-content__toggle" id="ceiling__toggle_9">
+                                        <label for="ceiling__toggle_9" class="block-content__button">Окраска потолка</label>
+                                        <input type="number" class="block-content__area" placeholder="Площадь, м2">
+                                    </li>
+                                    <li class="block-other-content-list__item">
+                                        <input type="checkbox" class="block-content__toggle" id="ceiling__toggle_10">
+                                        <label for="ceiling__toggle_10" class="block-content__button">Оклейка потолка обоями</label>
+                                        <input type="number" class="block-content__area" placeholder="Площадь, м2">
+                                    </li>
+                                    <li class="block-other-content-list__item">
+                                        <input type="checkbox" class="block-content__toggle" id="ceiling__toggle_11">
+                                        <label for="ceiling__toggle_11" class="block-content__button">Монтаж потолка ArmStrong</label>
+                                        <input type="number" class="block-content__area" placeholder="Площадь, м2">
+                                    </li>
+                                    <li class="block-other-content-list__item">
+                                        <input type="checkbox" class="block-content__toggle" id="ceiling__toggle_12">
+                                        <label for="ceiling__toggle_12" class="block-content__button">Монтаж потолка (ГКЛ) 1 ур.</label>
+                                        <input type="number" class="block-content__area" placeholder="Площадь, м2">
+                                    </li>
+                                    <li class="block-other-content-list__item">
+                                        <input type="checkbox" class="block-content__toggle" id="ceiling__toggle_13">
+                                        <label for="ceiling__toggle_13" class="block-content__button">Монтаж потолка (ГКЛ) 2 ур.</label>
+                                        <input type="number" class="block-content__area" placeholder="Площадь, м2">
+                                    </li>
+                                    <li class="block-other-content-list__item">
+                                        <input type="checkbox" class="block-content__toggle" id="ceiling__toggle_14">
+                                        <label for="ceiling__toggle_14" class="block-content__button">Установка натяжного потолка</label>
+                                        <input type="number" class="block-content__area" placeholder="Площадь, м2">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="block__subheader">Стены</div>
+                            <div class="block-other-content">
+                                <ul class="block-other-content-list">
+                                    <div class="block-other-content-list__header">Подготовка стен</div>
+                                    <li class="block-other-content-list__item">
+                                        <input type="checkbox" class="block-content__toggle" id="wall__toggle_1">
+                                        <label for="wall__toggle_1" class="block-content__button">Не требуется</label>
+                                        <input type="number" class="block-content__area" placeholder="Площадь, м2">
+                                    </li>
+                                    <li class="block-other-content-list__item">
+                                        <input type="checkbox" class="block-content__toggle" id="wall__toggle_2">
+                                        <label for="wall__toggle_2" class="block-content__button">Очистка стен от обоев</label>
+                                        <input type="number" class="block-content__area" placeholder="Площадь, м2">
+                                    </li>
+                                    <li class="block-other-content-list__item">
+                                        <input type="checkbox" class="block-content__toggle" id="wall__toggle_3">
+                                        <label for="wall__toggle_3" class="block-content__button">Демонтаж штукатурки со стен</label>
+                                        <input type="number" class="block-content__area" placeholder="Площадь, м2">
+                                    </li>
+                                    <li class="block-other-content-list__item">
+                                        <input type="checkbox" class="block-content__toggle" id="wall__toggle_4">
+                                        <label for="wall__toggle_4" class="block-content__button">Демонтаж плитки со стен</label>
+                                        <input type="number" class="block-content__area" placeholder="Площадь, м2">
+                                    </li>
+                                    <li class="block-other-content-list__item">
+                                        <input type="checkbox" class="block-content__toggle" id="wall__toggle_5">
+                                        <label for="wall__toggle_5" class="block-content__button">Очистка стен от краски</label>
+                                        <input type="number" class="block-content__area" placeholder="Площадь, м2">
+                                    </li>
+                                    <li class="block-other-content-list__item">
+                                        <input type="checkbox" class="block-content__toggle" id="wall__toggle_6">
+                                        <label for="wall__toggle_6" class="block-content__button">Выравнивание стен</label>
+                                        <input type="number" class="block-content__area" placeholder="Площадь, м2">
+                                    </li>
+                                    <li class="block-other-content-list__item">
+                                        <input type="checkbox" class="block-content__toggle" id="wall__toggle_7">
+                                        <label for="wall__toggle_7" class="block-content__button">Шпатлевка и шлифовка</label>
+                                        <input type="number" class="block-content__area" placeholder="Площадь, м2">
+                                    </li>
+                                </ul>
+                                <ul class="block-other-content-list">
+                                    <div class="block-other-content-list__header">Отделка стен</div>
+                                    <li class="block-other-content-list__item">
+                                        <input type="checkbox" class="block-content__toggle" id="wall__toggle_8">
+                                        <label for="wall__toggle_8" class="block-content__button">Не требуется</label>
+                                        <input type="number" class="block-content__area" placeholder="Площадь, м2">
+                                    </li>
+                                    <li class="block-other-content-list__item">
+                                        <input type="checkbox" class="block-content__toggle" id="wall__toggle_9">
+                                        <label for="wall__toggle_9" class="block-content__button">Окраска стен обоями флизилин</label>
+                                        <input type="number" class="block-content__area" placeholder="Площадь, м2">
+                                    </li>
+                                    <li class="block-other-content-list__item">
+                                        <input type="checkbox" class="block-content__toggle" id="wall__toggle_10">
+                                        <label for="wall__toggle_10" class="block-content__button">Оклейка стен обоями (бумага)</label>
+                                        <input type="number" class="block-content__area" placeholder="Площадь, м2">
+                                    </li>
+                                    <li class="block-other-content-list__item">
+                                        <input type="checkbox" class="block-content__toggle" id="wall__toggle_11">
+                                        <label for="wall__toggle_11" class="block-content__button">Окраска стен</label>
+                                        <input type="number" class="block-content__area" placeholder="Площадь, м2">
+                                    </li>
+                                    <li class="block-other-content-list__item">
+                                        <input type="checkbox" class="block-content__toggle" id="wall__toggle_12">
+                                        <label for="wall__toggle_12" class="block-content__button">Облицовка плиткой</label>
+                                        <input type="number" class="block-content__area" placeholder="Площадь, м2">
+                                    </li>
+                                    <li class="block-other-content-list__item">
+                                        <input type="checkbox" class="block-content__toggle" id="wall__toggle_13">
+                                        <label for="wall__toggle_13" class="block-content__button">Обшивка стен вагонкой</label>
+                                        <input type="number" class="block-content__area" placeholder="Площадь, м2">
+                                    </li>
+                                    <li class="block-other-content-list__item">
+                                        <input type="checkbox" class="block-content__toggle" id="wall__toggle_14">
+                                        <label for="wall__toggle_14" class="block-content__button">Обшивка стен вагонкой</label>
+                                        <input type="number" class="block-content__area" placeholder="Площадь, м2">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="block__subheader">Электрика / Сантехника</div>
+                            <div class="block-other-content">
+                                <ul class="block-other-content-list">
+                                    <div class="block-other-content-list__header"></div>
+                                    <li class="block-other-content-list__item">
+                                        <input type="checkbox" class="block-content__toggle" id="elictric__toggle_1">
+                                        <label for="elictric__toggle_1" class="block-content__button">Выключатели и розетки</label>
+                                        <input type="number" class="block-content__area" placeholder="Количество, шт.">
+                                    </li>
+                                    <li class="block-other-content-list__item">
+                                        <input type="checkbox" class="block-content__toggle" id="elictric__toggle_2">
+                                        <label for="elictric__toggle_2" class="block-content__button">Люстры и светильники</label>
+                                        <input type="number" class="block-content__area" placeholder="Количество, шт.">
+                                    </li>
+                                    <li class="block-other-content-list__item">
+                                        <input type="checkbox" class="block-content__toggle" id="elictric__toggle_3">
+                                        <label for="elictric__toggle_3" class="block-content__button">Сборка эл. щитка</label>
+                                    </li>
+                                </ul>
+                                <ul class="block-other-content-list">
+                                    <div class="block-other-content-list__header"></div>
+                                    <li class="block-other-content-list__item">
+                                        <input type="checkbox" class="block-content__toggle" id="plumbing__toggle_1">
+                                        <label for="plumbing__toggle_1" class="block-content__button">Санузлы</label>
+                                        <input type="number" class="block-content__area" placeholder="Количество санузлов">
+                                        <!-- <input type="number" class="block-content__area" placeholder="Общая площадь санузлов"> -->
+                                    </li>
+                                    <li class="block-other-content-list__item">
+                                        <input type="checkbox" class="block-content__toggle" id="plumbing__toggle_2">
+                                        <label for="plumbing__toggle_2" class="block-content__button">Разводка труб в санузле</label>
+                                        <input type="number" class="block-content__area" placeholder="Площадь, м2">
+                                    </li>
+                                    <li class="block-other-content-list__item">
+                                        <input type="checkbox" class="block-content__toggle" id="plumbing__toggle_3">
+                                        <label for="plumbing__toggle_3" class="block-content__button">Демонтаж сантехники</label>
+                                        <input type="number" class="block-content__area" placeholder="Площадь, м2">
+                                    </li>
+                                </ul>
+                            </div>
+                       </div>
+                       <div class="block block-result">
+                            <div class="block__header">Стоимость ремонта:</div>
+                       </div>
+                   </div>
+               </section>        
+            <!-- /Section Calculator -->
 
             <!-- Section Portfolio -->
             <section class="section-portfolio">
@@ -430,6 +757,6 @@
     <script src="./js/portfolio.js"></script>
     <script src="./js/form.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- Слайдер -->
+    <script src="./fotorama/fotorama.js"></script>
 </body>
 </html>
